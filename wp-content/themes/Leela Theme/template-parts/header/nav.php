@@ -9,9 +9,10 @@
   <div class="container">
     
     <!-- Logo -->
+     <div class="col-lg-6">
     <a class="navbar-brand" href="<?php echo home_url(); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>">
-    </a>
+    </a></div>
 
     <!-- Toggler Button (Mobile) -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
