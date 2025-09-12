@@ -2,7 +2,7 @@
 /**
  * Main template file.
  * 
- * @package leelaHoldings
+ * @package Leela
  */
 get_header();
 ?>
