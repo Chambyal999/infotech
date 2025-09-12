@@ -28,7 +28,21 @@ function leelaHoldings_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
 
 
+// SASS
+<?php
+function leela_theme_enqueue_styles() {
+    // Enqueue the compiled main.css
+    wp_enqueue_style(
+        'leela-main', // Handle
+        get_template_directory_uri() . '/styles/css/main.css', // Path to your compiled CSS
+        array(), // Dependencies
+        filemtime(get_template_directory() . '/styles/css/main.css') // Versioning based on file time
+    );
+}
+add_action('wp_enqueue_scripts', 'leela_theme_enqueue_styles');
 
+
+// Sass end
 
 
 // Main Menus
