@@ -29,7 +29,6 @@ add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
 
 
 // SASS
-<?php
 function leela_theme_enqueue_styles() {
     // Enqueue the compiled main.css
     wp_enqueue_style(
@@ -40,7 +39,6 @@ function leela_theme_enqueue_styles() {
     );
 }
 add_action('wp_enqueue_scripts', 'leela_theme_enqueue_styles');
-
 
 // Sass end
 
