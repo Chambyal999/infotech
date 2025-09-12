@@ -32,11 +32,14 @@ $footer_images = [
                             <?php echo do_shortcode('[wpzoom_social_icons id="7"]'); ?>
                         </div>
                         <div class="col-lg-8">
-                        <div class="col-lg-4 col-md-12 mb-4">
+                    <section class="row">
+                        <div class="col-lg-6 col-md-12 mb-4">
                             <p>leelasonscorporation@gmail.com</p>
                             <a href="tel://+917807982499">+91 78079-82499</p>
                         </div>
-                        <div class="col-lg-2 col-md-4 mb-4">
+                        <section class="col-lg-6">
+                            <div class="row">
+                        <div class="col-lg-6 col-md-4 mb-4">
                            <?php
                             wp_nav_menu(array(
                                 'theme_location' => 'footer-activities',
@@ -45,7 +48,7 @@ $footer_images = [
                             ));
                             ?>
                         </div>
-                        <div class="col-lg-2 col-md-4 mb-4">
+                        <div class="col-lg-6 col-md-4 mb-4">
                            <?php
                             wp_nav_menu(array(
                                 'theme_location' => 'footer-blogs',
@@ -53,16 +56,16 @@ $footer_images = [
                                 'container' => false
                             ));
                             ?>
-                            <div class="col-lg-4 col-md-4 mb-4 social-media">
+                        </div>
+                        </div>
+                        </section>
+                        </section>
+                        <div class="col-lg-12 col-md-6 mb-4 social-media">
                                   <a href="#"><i class="fab fa-facebook"></i></a>
                                   <a href="#"><i class="fab fa-twitter"></i></a>
                                   <a href="#"><i class="fab fa-linkedin"></i></a>
                                   <a href="#"><i class="fab fa-github"></i></a>
                                   <a href="#"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6 mb-4">
-                           
                         </div>
                         </div>
                     </div>
