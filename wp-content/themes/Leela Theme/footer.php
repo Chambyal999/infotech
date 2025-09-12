@@ -45,7 +45,7 @@ $footer_images = [
                             <?php
                             wp_nav_menu(array(
                                 'theme_location' => 'footer-activities',
-                                'menu_class' => 'list-unstyled',
+                                'menu_class' => 'list-unstyled footer-menu',
                                 'container' => false
                             ));
                             ?>
@@ -55,7 +55,7 @@ $footer_images = [
                             <?php
                             wp_nav_menu(array(
                                 'theme_location' => 'footer-blogs',
-                                'menu_class' => 'list-unstyled',
+                                'menu_class' => 'list-unstyled footer-menu',
                                 'container' => false
                             ));
                             ?>
@@ -65,7 +65,7 @@ $footer_images = [
                             <?php
                             wp_nav_menu(array(
                                 'theme_location' => 'footer-about',
-                                'menu_class' => 'list-unstyled',
+                                'menu_class' => 'list-unstyled footer-menu',
                                 'container' => false
                             ));
                             ?>
