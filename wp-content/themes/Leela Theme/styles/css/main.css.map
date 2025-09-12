@@ -1,1 +1,1 @@
-{"version":3,"sources":["footer.scss","header.scss"],"names":[],"mappings":"AACI,gBACI,MAAA,IAEJ,aACI,iBAAA,KCLR,KAEI,MAAA","file":"main.css","sourcesContent":["body{\r\n    .container{\r\n        color: red;\r\n    }\r\n    .footer{\r\n        background-color: yellow;\r\n    }\r\n}","body{\r\n    color: white;\r\n    color:red;\r\n}"]}
+{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":[],"file":"main.css"}
