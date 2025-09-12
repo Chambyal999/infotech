@@ -38,7 +38,7 @@ function leela_theme_enqueue_styles() {
         filemtime(get_template_directory() . '/styles/css/main.css') // Versioning based on file time
     );
 }
-add_action('wp_enqueue_scripts', 'leela_theme_enqueue_styles');
+add_action('wp_enqueue_scripts', 'leela_theme_enqueue_styles'); 
 
 // Sass end
 
