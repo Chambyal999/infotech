@@ -1,2 +1,30 @@
-@import 'header';
-@import 'footer';
+// main.scss
+// main.scss
+
+// Colors & backgrounds
+@use "variables/colors" as *;
+
+// Fonts & typography
+@use "variables/fonts" as *;
+
+// Spacing
+@use "variables/spacing" as *;
+
+// Borders
+@use "variables/borders" as *;
+
+// Shadows
+@use "variables/shadow" as *;
+
+// Transitions
+@use "variables/transition" as *;
+
+// Z-index
+@use "variables/zindex" as *;
+
+@use "variables/menu";
+
+
+.red{
+    color: $primary;
+}
