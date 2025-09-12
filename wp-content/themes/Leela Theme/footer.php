@@ -37,6 +37,8 @@ $footer_images = [
                             <p>leelasonscorporation@gmail.com</p>
                             <a href="tel://+917807982499">+91 78079-82499</p>
                         </div>
+
+                        
                         <section class="col-lg-6">
                             <div class="row">
                         <div class="col-lg-6 col-md-4 mb-4">
