@@ -28,17 +28,17 @@ function leelaHoldings_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
 
 
-// SASS
-function leela_theme_enqueue_styles() {
-    // Enqueue the compiled main.css
-    wp_enqueue_style(
-        'leela-main', // Handle
-        get_template_directory_uri() . '/styles/css/main.css', // Path to your compiled CSS
-        array(), // Dependencies
-        filemtime(get_template_directory() . '/styles/css/main.css') // Versioning based on file time
+// JS
+function leela_theme_enqueue_scripts() {
+    wp_enqueue_script(
+        'leela-main-js', // Handle
+        get_stylesheet_directory_uri() . '/styles/js/main.js', // Path to compiled JS
+        array('jquery'), // Dependencies (use [] if no deps, or add 'jquery' etc.)
+        filemtime(get_stylesheet_directory() . '/styles/js/main.js'), // Versioning
+        true // Load in footer
     );
 }
-add_action('wp_enqueue_scripts', 'leela_theme_enqueue_styles'); 
+add_action('wp_enqueue_scripts', 'leela_theme_enqueue_scripts');
 
 // Sass end
 
