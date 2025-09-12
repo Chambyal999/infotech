@@ -60,15 +60,15 @@ $footer_images = [
                         </div>
                         </section>
                         </section>
-                        <div class="col-lg-12 col-md-6 mb-4 social-media">
+                        </div>
+                    </div>
+                     <div class="social-media">
                                   <a href="#"><i class="fab fa-facebook"></i></a>
                                   <a href="#"><i class="fab fa-twitter"></i></a>
                                   <a href="#"><i class="fab fa-linkedin"></i></a>
                                   <a href="#"><i class="fab fa-github"></i></a>
                                   <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="bg-secondary text-center p-2">© 2025 Leela Infotech | Built by Atul Chambyal</div>
