@@ -28,3 +28,10 @@
 .red{
     color: $primary;
 }
+.footer-menu .page_item{
+list-style: none;
+    a{
+    text-decoration-line: none;
+    color:$white;
+}
+}
