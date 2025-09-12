@@ -25,18 +25,18 @@ $footer_images = [
             <main class="d-flex flex-column mt-5">
                 <div class="container py-5">
                     <div class="row pt-4">
-                        <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="col-lg-4 col-md-6 mb-4">
                             <h5>Leela Infotech, Inc.</h5>
                             <p class="text-10 text-start">© 2017 Piroll. All rights reserved.</p>
                             <p>Designed by Atul Chambyal.</p>
                             <?php echo do_shortcode('[wpzoom_social_icons id="7"]'); ?>
                         </div>
-                        <div class="col-lg-6">
-                        <div class="col-lg-3 col-md-12 mb-4">
+                        <div class="col-lg-8">
+                        <div class="col-lg-4 col-md-12 mb-4">
                             <p>leelasonscorporation@gmail.com</p>
                             <a href="tel://+917807982499">+91 78079-82499</p>
                         </div>
-                        <div class="col-lg-3 col-md-4 mb-4">
+                        <div class="col-lg-2 col-md-4 mb-4">
                            <?php
                             wp_nav_menu(array(
                                 'theme_location' => 'footer-activities',
@@ -45,7 +45,7 @@ $footer_images = [
                             ));
                             ?>
                         </div>
-                        <div class="col-lg-3 col-md-4 mb-4">
+                        <div class="col-lg-2 col-md-4 mb-4">
                            <?php
                             wp_nav_menu(array(
                                 'theme_location' => 'footer-blogs',
@@ -53,7 +53,7 @@ $footer_images = [
                                 'container' => false
                             ));
                             ?>
-                            <div class="col-lg-3 col-md-4 mb-4 social-media">
+                            <div class="col-lg-4 col-md-4 mb-4 social-media">
                                   <a href="#"><i class="fab fa-facebook"></i></a>
                                   <a href="#"><i class="fab fa-twitter"></i></a>
                                   <a href="#"><i class="fab fa-linkedin"></i></a>
