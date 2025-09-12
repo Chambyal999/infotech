@@ -8,7 +8,7 @@
   <div class="container">
     <!-- Logo -->
     <a class="navbar-brand" href="https://infotech.leelaholdings.in/">
-      <img src="/images/logo.png" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo">
     </a>
 
     <!-- Toggler Button -->
