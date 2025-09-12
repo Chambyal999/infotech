@@ -40,9 +40,10 @@ list-style: none;
 //Menu
 .navbar-nav .menu-item{
     list-style: none;
+    padding: $space-md $space-lg;
     a{
         text-decoration-line: none;
-    color:$black;
+        color:$black;
     }
 }
 
