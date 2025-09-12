@@ -7,8 +7,8 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
     <!-- Logo -->
-    <a class="navbar-brand" href="https://leelaholdings.in/">
-      <img src="/wp-content/uploads/2025/09/logo.png" width="200px" alt="" class="shadow-bg-btn border-radius-8">
+    <a class="navbar-brand" href="https://infotech.leelaholdings.in/">
+      <img src="/images/logo.png" alt="">
     </a>
 
     <!-- Toggler Button -->
