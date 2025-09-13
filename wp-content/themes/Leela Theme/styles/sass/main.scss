@@ -122,3 +122,31 @@ list-style: none;
 // footer social icons end 
 
 
+
+// header background
+.header-background {
+    min-height: 80vh;
+    background-image: url("../images/Landing-Photo.webp");
+    background-position-y: -200px;
+    background-size: cover;
+    background-color: var(--O-white-c);
+    position: relative;
+    overflow: hidden;
+
+    .text {
+    width: 500px;
+    position: absolute;
+    top: 15vmax;
+    right: 0;
+    font-size: 12px;
+
+    @media screen and (max-width: 767px) {
+.text {
+        bottom: 20px;
+        width: 85vw;
+        top: auto;
+        right: 30px;
+    }
+}
+
+    }}
