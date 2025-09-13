@@ -35,7 +35,7 @@ $footer_images = [
                              <p class="menu-item mb-0"><a href="mailto:leelasonscorporation@gmail.com">leelasonscorporation@gmail.com</a></p>
                             <p class="menu-item"><a href="tel:7807982499">+91 78079-82499</a></p>
                         </div>
-
+ 
                         
                         <section class="col-lg-6">
                             <div class="row">
