@@ -27,8 +27,7 @@ $footer_images = [
                     <div class="row pt-4">
                         <div class="col-lg-4 col-md-6 mb-4">
                             <h5>Leela Infotech, Inc.</h5>
-                            <p class="text-10 text-start">© 2017 Piroll. All rights reserved.</p>
-                            <p>Designed by Atul Chambyal.</p>
+                            <p class="text-12 text-start">Designed by Atul Chambyal.</p>
                         </div>
                         <div class="col-lg-8">
                     <section class="row">
@@ -72,7 +71,7 @@ $footer_images = [
                         </div>
                 </div>
 
-                <div class="bg-secondary text-center p-2">© 2025 Leela Infotech | Built by Atul Chambyal</div>
+                <div class="bg-secondary text-center p-2">© 2025 Leela INC. All rights reserved.</p></div>
             </main>
         </footer>
     </footer>
