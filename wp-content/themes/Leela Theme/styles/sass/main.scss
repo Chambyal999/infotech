@@ -44,10 +44,25 @@ list-style: none;
     a{
         text-decoration-line: none;
         color:$black;
-    }
-    &:hover{
+
+         &:hover{
         color:$neon;
     }
+    }
+   
+}
+.footer-menu .menu-item{
+  list-style: none;
+    padding: $space-md $space-lg;
+    a{
+        text-decoration-line: none;
+        color:$white;
+
+         &:hover{
+        color:$neon;
+    }
+    }
+   
 }
 
 //footer social icons start
