@@ -45,10 +45,8 @@ function custom_theme_main_menu(){
     register_nav_menus(
         array(
             'main-menu'=> __('Main Menu'),
-            'footer-offices'=> __('Footer Office'),
-            'footer-activities'=>__('Footer Activities'),
-            'footer-blogs'=>__('Footer Blogs'),
-            'footer-about'=>__('Footer About'),
+            'footer-menu-1'=> __('Footer Menu 1'),
+            'footer-menu-2'=>__('Footer Menu 2'),
         )
     );
 }
