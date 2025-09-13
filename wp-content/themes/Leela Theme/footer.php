@@ -44,7 +44,7 @@ $footer_images = [
                         <div class="col-lg-6 col-md-4 mb-4">
                            <?php
                             wp_nav_menu(array(
-                                'theme_location' => 'footer-activities',
+                                'theme_location' => 'footer-menu-1',
                                 'menu_class' => 'list-unstyled footer-menu',
                                 'container' => false
                             ));
@@ -53,7 +53,7 @@ $footer_images = [
                         <div class="col-lg-6 col-md-4 mb-4">
                            <?php
                             wp_nav_menu(array(
-                                'theme_location' => 'footer-blogs',
+                                'theme_location' => 'footer-menu-2',
                                 'menu_class' => 'list-unstyled footer-menu',
                                 'container' => false
                             ));
