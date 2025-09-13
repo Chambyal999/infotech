@@ -24,8 +24,8 @@
         ));
       ?>
     </div>
-
-     <div class="header-background">
+      </header>
+      <div class="header-background">
                     <div class="text">
                         <h2>We Design and Develop</h2>
                         <p>
@@ -37,5 +37,4 @@
                         <button>contact us</button>
                     </div>
                 </div>
-      </header>
 </nav>
