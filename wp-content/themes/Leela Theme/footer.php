@@ -29,7 +29,6 @@ $footer_images = [
                             <h5>Leela Infotech, Inc.</h5>
                             <p class="text-10 text-start">© 2017 Piroll. All rights reserved.</p>
                             <p>Designed by Atul Chambyal.</p>
-                            <?php echo do_shortcode('[wpzoom_social_icons id="7"]'); ?>
                         </div>
                         <div class="col-lg-8">
                     <section class="row">
