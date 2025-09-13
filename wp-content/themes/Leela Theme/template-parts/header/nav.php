@@ -25,16 +25,4 @@
       ?>
     </div>
       </header>
-      <div class="header-background">
-                    <div class="text">
-                        <h2>We Design and Develop</h2>
-                        <p>
-                            We are a new design studio based in USA. We have
-                            over 20 years of combined experience, and know a
-                            thing or two about designing websites and mobile
-                            apps
-                        </p>
-                        <button>contact us</button>
-                    </div>
-                </div>
 </nav>
