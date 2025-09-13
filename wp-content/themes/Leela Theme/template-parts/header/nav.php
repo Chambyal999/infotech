@@ -6,7 +6,7 @@
 ?>
       
      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container">
+  <header class="container">
     <a class="navbar-brand" href="#">
       <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>">
     </a>
@@ -24,5 +24,18 @@
         ));
       ?>
     </div>
-  </div>
+
+     <div class="header-background">
+                    <div class="text">
+                        <h2>We Design and Develop</h2>
+                        <p>
+                            We are a new design studio based in USA. We have
+                            over 20 years of combined experience, and know a
+                            thing or two about designing websites and mobile
+                            apps
+                        </p>
+                        <button>contact us</button>
+                    </div>
+                </div>
+      </header>
 </nav>
