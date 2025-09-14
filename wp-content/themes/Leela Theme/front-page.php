@@ -7,7 +7,7 @@
 get_header();
 ?>
 <main id="main" class="site-main">
-      <!-- <div class="header-background">
+      <div class="header-background">
                     <div class="text">
                         <h2>We Design and Develop</h2>
                         <p>
@@ -18,7 +18,7 @@ get_header();
                         </p>
                         <button>contact us</button>
                     </div>
-                </div> -->
+                </div>
 
 
                  <?php
