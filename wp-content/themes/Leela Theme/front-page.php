@@ -14,16 +14,21 @@ $base_url = "https://infotech.leelaholdings.in";
 $images = [
     [ "url" => "/wp-content/uploads/2025/09/shimla.webp",
      "alt" => "First Image", 
-     "class" => "my-img",
+     "class" => "my-img h-100",
      "title" => "Welcome to Shimla",
      "description" => "Experience the serene beauty of the hills." ],
-    [ "url" => "/wp-content/uploads/2025/09/image-24-scaled.jpg", "alt" => "Second Image", "class" => "my-img" ],
-    [ "url" => "/wp-content/uploads/2025/09/image-23-scaled.jpg", "alt" => "Third Image", "class" => "my-img" ],
-    [ "url" => "/wp-content/uploads/2025/09/image-19-scaled.jpg", "alt" => "Fourth Image", "class" => "my-img" ],
-    [ "url" => "/wp-content/uploads/2025/09/image-16-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ],
-    [ "url" => "/wp-content/uploads/2025/09/image-13-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ],
-    [ "url" => "/wp-content/uploads/2025/09/image-9-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ],
-    [ "url" => "/wp-content/uploads/2025/09/image-4-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ]
+
+    [ "url" => "/wp-content/uploads/2025/09/image-24-scaled.jpg",
+     "alt" => "Second Image",
+     "class" => "my-img h-100",
+     "title" => "Adventure Awaits",
+     "description" => "Explore the mountains and valleys." ],
+
+    [ "url" => "/wp-content/uploads/2025/09/image-23-scaled.jpg",
+     "alt" => "Third Image",
+     "class" => "my-img h-100",
+    "title" => "Relax & Unwind",
+    "description" => "Find peace in nature's embrace." ]
 
 ];
 ?>
@@ -43,7 +48,7 @@ $images = [
                          class="<?php echo $img["class"]; ?>" 
                          style="width:100%; height:auto;">
 
-                           <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary bg-gradient bg-opacity-50 d-flex align-items-center">
+                           <div class="position-absolute w-100 h-100 bg-primary bg-gradient bg-opacity-50 d-flex text-start align-items-center">
                             <div class="container text-white">
                                 <h1><?php echo $img["title"]; ?></h1>
                                 <p><?php echo $img["description"]; ?></p>
