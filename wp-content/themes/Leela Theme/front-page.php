@@ -48,7 +48,7 @@ $images = [
                          class="<?php echo $img["class"]; ?>" 
                          style="width:100%; height:auto;">
 
-                           <div class="position-absolute w-100 h-100 bg-primary bg-gradient bg-opacity-50 d-flex text-start align-items-center">
+                           <div class="position-absolute w-100 h-100 bg-diagonal-tech d-flex text-start align-items-center">
                             <div class="container text-white">
                                 <h1><?php echo $img["title"]; ?></h1>
                                 <p><?php echo $img["description"]; ?></p>
