@@ -26,10 +26,6 @@
 
 @use "variables/swiper.scss";
 
-
-.red{
-    color: $primary;
-}
 .footer-menu .page_item{
 list-style: none;
     a{
@@ -127,5 +123,40 @@ list-style: none;
 .header-background{
   max-height: 500px !important;
 }
+
+
+// Main color related to theme
+.hero {
+  background: $hero-bg-gradient;
+  color: $hero-text-color;
+  padding: 100px 0;
+  text-align: center;
+}
+
+button.primary {
+  background: $btn-primary-bg;
+  color: $btn-primary-color;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: $btn-hover-bg;
+  }
+}
+
+body {
+  background: $background-light;
+  color: $text-dark;
+}
+
+footer {
+  background: $footer-bg;
+  color: $footer-text;
+  padding: 40px 0;
+}
+
 
 
