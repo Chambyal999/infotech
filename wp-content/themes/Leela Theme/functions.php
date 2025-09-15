@@ -78,5 +78,26 @@ add_shortcode('site_url', function () {
 
 
 
+// Swiper css js
+function leela_enqueue_swiper() {
+    // Swiper CSS
+    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', [], null);
+    
+    // Swiper JS
+    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], null, true);
+    
+    // Initialize Swiper
+    wp_add_inline_script('swiper-js', "
+        document.addEventListener('DOMContentLoaded', function() {
+            const swipers = document.querySelectorAll('swiper-container');
+            swipers.forEach(swiperEl => {
+                swiperEl.initialize();
+            });
+        });
+    ");
+}
+add_action('wp_enqueue_scripts', 'leela_enqueue_swiper');
+
+
 
 ?>
