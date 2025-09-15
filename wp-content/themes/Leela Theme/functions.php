@@ -64,17 +64,17 @@ add_action('after_setup_theme', 'hide_admin_bar_for_subscribers');
 
 
 
-// Site Phone Number shortcode
-function leela_phone_shortcode() {
-    return '+91-9876543210'; // you can replace with dynamic if needed
-}
-add_shortcode('site_phone_number', 'leela_phone_shortcode');
+// Shortcode for clickable phone number
+add_shortcode('site_phone_number', function () {
+    return '<a href="tel:+919876543210">+91-9876543210</a>';
+});
 
-// Site URL shortcode
-function leela_url_shortcode() {
-    return get_site_url(); // WordPress knows your domain
-}
-add_shortcode('site_url', 'leela_url_shortcode');
+// Shortcode for clickable site URL
+add_shortcode('site_url', function () {
+    $url = get_site_url();
+    return '<a href="' . $url . '">' . $url . '</a>';
+});
+
 
 
 

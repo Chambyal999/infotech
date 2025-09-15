@@ -6,40 +6,58 @@
  */
 get_header();
 ?>
+<?php
+// Base URL of your site
+$base_url = "https://infotech.leelaholdings.in";
+
+// Image paths (relative to root)
+$images = [
+    [ "url" => "/wp-content/uploads/2025/09/shimla.webp", "alt" => "First Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-24-scaled.jpg", "alt" => "Second Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-23-scaled.jpg", "alt" => "Third Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-19-scaled.jpg", "alt" => "Fourth Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-16-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-13-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-9-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-4-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ]
+
+];
+?>
+
 <main id="main" class="site-main">
-      <div class="header-background">
-    
-      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
-    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-    <swiper-slide> </swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide>
-    <swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide>
-    <swiper-slide>Slide 9</swiper-slide>
-  </swiper-container>
+    <div class="header-background">
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <swiper-container class="mySwiper" 
+            pagination="true" 
+            pagination-clickable="true" 
+            navigation="true" 
+            space-between="30"
+            centered-slides="true" 
+            autoplay-delay="2500" 
+            autoplay-disable-on-interaction="false">
+            
+            <?php foreach ($images as $img) : ?>
+                <swiper-slide>
+                    <img src="<?php echo $base_url . $img["url"]; ?>" 
+                         alt="<?php echo $img["alt"]; ?>" 
+                         class="<?php echo $img["class"]; ?>" 
+                         style="width:100%; height:auto;">
+                </swiper-slide>
+            <?php endforeach; ?>
+        </swiper-container>
 
-                </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </div>
 
-
-                 <?php
+    <?php
     if ( have_posts() ) {
         while ( have_posts() ) {
             the_post();
-
-            // 🔹 THIS is required for Elementor to work
+            // 🔹 Required for Elementor content
             the_content();
         }
     }
     ?>
+</main>
 
-
-            </main>
-
-<?php
-get_footer();
+<?php get_footer(); ?>
