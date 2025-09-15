@@ -35,7 +35,7 @@
     </div>
     </main>
 
-    <section class="services-container">
+    <section class="services-container p-5">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-4">
