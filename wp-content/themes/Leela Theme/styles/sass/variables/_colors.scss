@@ -1,21 +1,57 @@
+@use "sass:color";
+
+
 // ==============================
-// COLORS, BACKGROUNDS, FONT COLORS
+// Leela Infotech - Elegant Tech Blue Gradient Palette
 // ==============================
 
-// Primary colors
-$primary: #ff6600;
-$secondary: #333333;
-$accent: #f5a623;
+// ------------------------------
+// Primary Gradient
+// ------------------------------
+$primary-gradient-start: #0D47A1; // deep blue
+$primary-gradient-end: #42A5F5;   // light tech blue
+$hero-bg-gradient: linear-gradient(135deg, $primary-gradient-start, $primary-gradient-end);
+$hero-text-color: #FFFFFF;
 
-// Status colors
+// ------------------------------
+// Secondary Accent / Buttons
+// ------------------------------
+$accent-color: #FFC107;  // warm amber
+$btn-primary-bg: $accent-color;
+$btn-primary-color: #212121; // dark text
+$btn-hover-bg: color.adjust($btn-primary-bg, $lightness: -10%);
+
+
+// ------------------------------
+// Body & Footer
+// ------------------------------
+$background-light: #F5F5F5;   // neutral light gray
+$background-dark: #1A1A1A;    // almost black
+$footer-bg: $background-dark;
+$footer-text: #FFFFFF;
+$text-dark: #212121;
+$text-light: #FFFFFF;
+$text-accent: $accent-color;
+
+// ------------------------------
+// Links & Hover
+// ------------------------------
+$link-color: $primary-gradient-end;
+$link-hover-color: color.adjust($primary-gradient-end, $lightness: 10%);
+$neon: #10c9c3;  // accent hover color
+
+// ------------------------------
+// Optional / Utility Colors
+// ------------------------------
 $success: #28a745;
 $error: #dc3545;
 $info: #17a2b8;
 $warning: #ffc107;
-$neon:#10c9c3;
 
-// Light and Gray Colors
-$white: #ffffff;
+// ------------------------------
+// Grays / Borders
+// ------------------------------
+$white: #FFFFFF;
 $gray-50: #f9f9f9;
 $gray-100: #f0f0f0;
 $gray-200: #e0e0e0;
@@ -27,76 +63,17 @@ $gray-700: #666666;
 $gray-800: #444444;
 $gray-900: #222222;
 $black: #000000;
-$white-blue: #e3edf7;
-
-// Pastel / light shades
-$light-blue: #e0f7ff;
-$light-green: #e6ffe0;
-$light-yellow: #fff9e6;
-$light-pink: #ffe6f0;
-$light-orange: #fff3e0;
-
-// Background variables
-$bg-primary: $primary;
-$bg-secondary: $secondary;
-$bg-accent: $accent;
-$bg-success: $success;
-$bg-error: $error;
-$bg-info: $info;
-$bg-light: $white;
-$bg-gray-50: $gray-50;
-$bg-gray-100: $gray-100;
-$bg-white-blue: $white-blue;
-
-// Font color variables
-$text-primary: $secondary;
-$text-secondary: $gray-700;
-$text-light: $white;
-$text-accent: $accent;
-$text-success: $success;
-$text-error: $error;
-$text-info: $info;
-$text-gray-50: $gray-50;
-$text-gray-100: $gray-100;
-
-// Border colors
-$border-primary: $primary;
-$border-secondary: $secondary;
+$bg-white-blue: #e3edf7; // for social icon backgrounds
+$border-primary: $primary-gradient-end;
+$border-secondary: $text-dark;
 $border-light: $gray-200;
 $border-dark: $gray-800;
 
-
-// Social icons
+// ------------------------------
+// Social Media Colors
+// ------------------------------
 $facebook: #3b5998;
 $twitter: #00acee;
 $linkedin: #0a66c2;
 $github: #161b22;
-$youtube: #f00;
-
-
-/* Black → White Gradients */
-.bg-bw-top {
-  background: linear-gradient(to bottom, black, white);
-}
-
-.bg-bw-bottom {
-  background: linear-gradient(to top, black, white);
-}
-
-.bg-bw-left {
-  background: linear-gradient(to right, black, white);
-}
-
-.bg-bw-right {
-  background: linear-gradient(to left, black, white);
-}
-
-/* Optional: Add opacity variants */
-.bg-bw-top-50 {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(255,255,255,0.5));
-}
-
-.bg-bw-bottom-50 {
-  background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(255,255,255,0.5));
-}
-
+$youtube: #ff0000;
