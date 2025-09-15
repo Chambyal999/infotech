@@ -26,13 +26,11 @@ $images = [
 
 <main id="main" class="site-main">
     <div class="header-background">
-
         <swiper-container class="mySwiper" 
-            navigation="true" 
             space-between="30"
             centered-slides="true" 
-            autoplay-delay="2500" 
-            autoplay-disable-on-interaction="false">
+            autoplay-delay="5500" 
+            autoplay-disable-on-interaction="true">
             
             <?php foreach ($images as $img) : ?>
                 <swiper-slide>
