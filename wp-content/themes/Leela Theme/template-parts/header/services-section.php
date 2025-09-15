@@ -34,3 +34,28 @@
 </div>
     </div>
     </main>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="strain"></div>
+            <div class="strain"></div>
+            <div class="strain"></div>
+            <div class="strain"></div>
+            <div class="strain"></div>
+            <div class="strain"></div>
+            <div class="strain"></div>
+            <div class="strain"></div>
+            <div class="strain"></div>
+            <div class="strain"></div>
+            <div class="strain"></div>
+            <div class="strain"></div>
+          </div>
+
+          <div class="col-lg-8">
+        <p>Leela infotech delivers technology solutions that combine engineering precision, strategic clarity, and deep empathy. We collaborate closely with clients to build digital platforms, custom apps, and integrated systems that align with business goals and drive measurable results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
