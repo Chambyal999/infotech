@@ -11,7 +11,7 @@ get_header();
 
 ?>
    <main id="main" class="site-main">
-  <div class="container">
+  <div class="container-fluid">
     <?php 
   get_template_part('/template-parts/header/services-section');
      ?>
