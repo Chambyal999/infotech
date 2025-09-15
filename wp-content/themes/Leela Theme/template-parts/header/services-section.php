@@ -35,7 +35,7 @@
     </div>
     </main>
 
-    <section class="services-container p-5">
+    <section class="services-container p-5 d-none d-lg-block">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-4">
@@ -54,7 +54,7 @@
           </div>
 
           <div class="col-lg-8">
-        <p class="h2">Leela infotech delivers technology solutions that combine engineering precision, strategic clarity, and deep empathy. We collaborate closely with clients to build digital platforms, custom apps, and integrated systems that align with business goals and drive measurable results.</p>
+        <p class="h2 w-75">Leela infotech delivers technology solutions that combine engineering precision, strategic clarity, and deep empathy. We collaborate closely with clients to build digital platforms, custom apps, and integrated systems that align with business goals and drive measurable results.</p>
           </div>
         </div>
       </div>
