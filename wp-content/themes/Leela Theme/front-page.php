@@ -38,7 +38,7 @@ $images = [
         <swiper-container class="mySwiper" 
             space-between="30"
             centered-slides="true" 
-            autoplay-delay="5500" 
+            autoplay-delay="3500" 
             autoplay-disable-on-interaction="true">
             
             <?php foreach ($images as $img) : ?>
