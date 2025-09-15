@@ -5,9 +5,14 @@
  * @package leelaHoldings
  */
 get_header();
+
+  get_template_part('/template-parts/header/hero-banner');
+
 ?>
 
 
+  // Hero Banner
+    
 <main id="main" class="site-main">
     <div class="container">
         <div class="card" data-tilt>
@@ -17,10 +22,8 @@ get_header();
             <a href="mailto:geekyprashant840@gmail.com" target="_blank" class="btn">Read More</a>
         </div>
     </div>
+
 <?php 
-  // Hero Banner
-  get_template_part('/template-parts/header/hero-banner');
-    
     if ( have_posts() ) {
         while ( have_posts() ) {
             the_post();
