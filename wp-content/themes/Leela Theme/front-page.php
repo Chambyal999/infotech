@@ -14,10 +14,15 @@ get_header();
   <div class="container-fluid">
     <?php 
   get_template_part('/template-parts/header/services-section');
+     ?>
+  </div>
+<section class="bg-white">
+  <div class="container">
+    <?php 
   echo do_shortcode('[forminator_form id="105"]');
      ?>
   </div>
-
+</section>
 <?php 
     if ( have_posts() ) {
         while ( have_posts() ) {
