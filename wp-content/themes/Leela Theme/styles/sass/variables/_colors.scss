@@ -72,3 +72,31 @@ $twitter: #00acee;
 $linkedin: #0a66c2;
 $github: #161b22;
 $youtube: #f00;
+
+
+/* Black → White Gradients */
+.bg-bw-top {
+  background: linear-gradient(to bottom, black, white);
+}
+
+.bg-bw-bottom {
+  background: linear-gradient(to top, black, white);
+}
+
+.bg-bw-left {
+  background: linear-gradient(to right, black, white);
+}
+
+.bg-bw-right {
+  background: linear-gradient(to left, black, white);
+}
+
+/* Optional: Add opacity variants */
+.bg-bw-top-50 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(255,255,255,0.5));
+}
+
+.bg-bw-bottom-50 {
+  background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(255,255,255,0.5));
+}
+
