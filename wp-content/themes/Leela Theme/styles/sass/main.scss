@@ -24,6 +24,8 @@
 
 @use "variables/menu";
 
+@use "variables/swiper.scss";
+
 
 .red{
     color: $primary;
@@ -123,33 +125,3 @@ list-style: none;
 
 
 
-// header background// header background
-.header-background {
-  min-height: 80vh;
-  background-image: url("https://infotech.leelaholdings.in/wp-content/uploads/2025/09/Landing-Photo-scaled.webp");
-  background-position-y: -200px;
-  background-size: cover;
-  background-color: var(--O-white-c);
-  position: relative;
-  overflow: hidden;
-
-  .text {
-    width: 500px;
-    position: absolute;
-    top: 15vmax;
-    right: 0;
-    font-size: 12px;
-
-    @media screen and (max-width: 767px) {
-      bottom: 20px;
-      width: 85vw;
-      top: auto;
-      right: 30px;
-    }
-  }
-// media query for header background image
-  @media screen and (max-width: 992px) {
-    background-image: url("https://infotech.leelaholdings.in/wp-content/uploads/2025/09/Landing-Photo-media-scaled.webp");
-    background-position: 0 0;
-  }
-}
