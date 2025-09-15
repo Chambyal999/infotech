@@ -34,15 +34,10 @@ $images = [
             
             <?php foreach ($images as $img) : ?>
                 <swiper-slide>
-                    <div>
-                      <img src="<?php echo $base_url . $img["url"]; ?>" 
+                    <img src="<?php echo $base_url . $img["url"]; ?>" 
                          alt="<?php echo $img["alt"]; ?>" 
                          class="<?php echo $img["class"]; ?>" 
                          style="width:100%; height:auto;">
-                    </div>
-                    <div>
-                      
-                    </div>
                 </swiper-slide>
             <?php endforeach; ?>
         </swiper-container>
