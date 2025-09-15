@@ -35,7 +35,7 @@
     </div>
     </main>
 
-    <section>
+    <section class="services-container">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
