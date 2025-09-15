@@ -12,19 +12,19 @@ $base_url = "https://infotech.leelaholdings.in";
 
 // Image paths (relative to root)
 $images = [
-    [ "url" => "/wp-content/uploads/2025/09/shimla.webp",
+    [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "First Image", 
      "class" => "my-img h-100",
      "title" => "Welcome to Shimla",
      "description" => "Experience the serene beauty of the hills." ],
 
-    [ "url" => "/wp-content/uploads/2025/09/image-24-scaled.jpg",
+    [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "Second Image",
      "class" => "my-img h-100",
      "title" => "Adventure Awaits",
      "description" => "Explore the mountains and valleys." ],
 
-    [ "url" => "/wp-content/uploads/2025/09/image-23-scaled.jpg",
+    [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "Third Image",
      "class" => "my-img h-100",
     "title" => "Relax & Unwind",
