@@ -21,7 +21,7 @@ $footer_images = [
     <footer class="position-relative main-footer">
        
         <footer class="bg-black text-white text-start footer-container">
-            <main class="d-flex flex-column mt-5">
+            <main class="d-flex flex-column">
                 <div class="container py-5">
                     <div class="row pt-4">
                         <div class="col-lg-4 col-md-6 mb-4">
