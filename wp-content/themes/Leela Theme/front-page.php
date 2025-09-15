@@ -1,31 +1,26 @@
 <?php
+/**
+ * Main template file.
+ * 
+ * @package leelaHoldings
+ */
+get_header();
+?>
+<?php
 // Base URL of your site
 $base_url = "https://infotech.leelaholdings.in";
 
-// Images array with title & description for overlay
+// Image paths (relative to root)
 $images = [
-    [
-        "url" => "/wp-content/uploads/2025/09/shimla.webp", 
-        "alt" => "First Image", 
-        "class" => "my-img",
-        "title" => "Welcome to Shimla",
-        "description" => "Experience the serene beauty of the hills."
-    ],
-    [
-        "url" => "/wp-content/uploads/2025/09/image-24-scaled.jpg", 
-        "alt" => "Second Image", 
-        "class" => "my-img",
-        "title" => "Adventure Awaits",
-        "description" => "Explore the mountains and valleys."
-    ],
-    [
-        "url" => "/wp-content/uploads/2025/09/image-23-scaled.jpg", 
-        "alt" => "Third Image", 
-        "class" => "my-img",
-        "title" => "Relax & Unwind",
-        "description" => "Find peace in nature's embrace."
-    ],
-    // Add remaining slides similarly...
+    [ "url" => "/wp-content/uploads/2025/09/shimla.webp", "alt" => "First Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-24-scaled.jpg", "alt" => "Second Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-23-scaled.jpg", "alt" => "Third Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-19-scaled.jpg", "alt" => "Fourth Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-16-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-13-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-9-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ],
+    [ "url" => "/wp-content/uploads/2025/09/image-4-scaled.jpg", "alt" => "Fifth Image", "class" => "my-img" ]
+
 ];
 ?>
 
@@ -39,20 +34,14 @@ $images = [
             
             <?php foreach ($images as $img) : ?>
                 <swiper-slide>
-                    <div class="position-relative">
-                        <!-- Slider Image -->
-                        <img src="<?php echo $base_url . $img["url"]; ?>" 
-                             alt="<?php echo $img["alt"]; ?>" 
-                             class="<?php echo $img["class"]; ?>" 
-                             style="width:100%; height:500px; object-fit:cover;">
-
-                        <!-- Overlay -->
-                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary bg-gradient bg-opacity-50 d-flex align-items-center">
-                            <div class="container text-white">
-                                <h1><?php echo $img["title"]; ?></h1>
-                                <p><?php echo $img["description"]; ?></p>
-                            </div>
-                        </div>
+                    <div>
+                      <img src="<?php echo $base_url . $img["url"]; ?>" 
+                         alt="<?php echo $img["alt"]; ?>" 
+                         class="<?php echo $img["class"]; ?>" 
+                         style="width:100%; height:auto;">
+                    </div>
+                    <div>
+                      
                     </div>
                 </swiper-slide>
             <?php endforeach; ?>
@@ -65,8 +54,11 @@ $images = [
     if ( have_posts() ) {
         while ( have_posts() ) {
             the_post();
+            // 🔹 Required for Elementor content
             the_content();
         }
     }
     ?>
 </main>
+
+<?php get_footer(); ?>
