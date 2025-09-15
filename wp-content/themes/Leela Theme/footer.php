@@ -18,7 +18,6 @@ $footer_images = [
 ];
 ?>
 
-<div class="h-100">
     <footer class="position-relative main-footer">
        
         <footer class="bg-black text-white text-start footer-container">
@@ -75,7 +74,6 @@ $footer_images = [
             </main>
         </footer>
     </footer>
-</div>
 <?php wp_footer(); ?>
 </body>
 
