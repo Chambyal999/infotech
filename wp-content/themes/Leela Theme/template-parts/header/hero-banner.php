@@ -45,7 +45,7 @@ $images = [
                             <div class="container text-white">
                                 <h1><?php echo $img["title"]; ?></h1>
                                 <p><?php echo $img["description"]; ?></p>
-                                <a href="#"> <?php echo $img["button"] ?></a>
+                                <a href="#" class="btn-primary"> <?php echo $img["button"] ?></a>
                             </div>
                         </div>
                 </swiper-slide>
