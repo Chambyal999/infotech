@@ -15,7 +15,7 @@
 
 // Shadows
 @use "variables/shadow" as *;
-
+ 
 // Transitions
 @use "variables/transition" as *;
 
@@ -23,8 +23,9 @@
 @use "variables/zindex" as *;
 
 @use "variables/menu";
+@use "variables/swiper";
+@use "variables/cards";
 
-@use "variables/swiper.scss";
 
 .footer-menu .page_item{
 list-style: none;
