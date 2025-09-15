@@ -28,7 +28,6 @@ $images = [
     <div class="header-background">
 
         <swiper-container class="mySwiper" 
-            pagination-clickable="true" 
             navigation="true" 
             space-between="30"
             centered-slides="true" 
