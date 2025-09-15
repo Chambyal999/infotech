@@ -53,56 +53,6 @@ function custom_theme_main_menu(){
 add_action('init', 'custom_theme_main_menu');
 
 
-// Enqueue Swiper styles and scripts
-function mytheme_enqueue_swiper_assets() {
-    // Theme stylesheet (style.css)
-    wp_enqueue_style(
-        'mytheme-style',
-        get_stylesheet_uri(),
-        array(),
-        wp_get_theme()->get('Version')
-    );
-
-    // Swiper CSS
-    wp_enqueue_style(
-        'swiper-css',
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
-        array(),
-        '11.0.0'
-    );
-
-    // Swiper JS
-    wp_enqueue_script(
-        'swiper-js',
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
-        array(),
-        '11.0.0',
-        true
-    );
-
-    // Custom Swiper initialization
-    wp_add_inline_script(
-        'swiper-js',
-        'var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-              delay: 3500,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-        });'
-    );
-}
-add_action('wp_enqueue_scripts', 'mytheme_enqueue_swiper_assets');
-
 
 // Hide admin bar only for subscribers
 function hide_admin_bar_for_subscribers() {
@@ -111,6 +61,21 @@ function hide_admin_bar_for_subscribers() {
     }
 }
 add_action('after_setup_theme', 'hide_admin_bar_for_subscribers');
+
+
+
+// Site Phone Number shortcode
+function leela_phone_shortcode() {
+    return '+91-9876543210'; // you can replace with dynamic if needed
+}
+add_shortcode('site_phone_number', 'leela_phone_shortcode');
+
+// Site URL shortcode
+function leela_url_shortcode() {
+    return get_site_url(); // WordPress knows your domain
+}
+add_shortcode('site_url', 'leela_url_shortcode');
+
 
 
 
