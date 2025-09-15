@@ -12,7 +12,7 @@ get_header();
   
 <?php 
   // Hero Banner
-  get_template_part('templates/hero-banner');
+  get_template_part('/template-parts/header/hero-banner');
     
     if ( have_posts() ) {
         while ( have_posts() ) {
