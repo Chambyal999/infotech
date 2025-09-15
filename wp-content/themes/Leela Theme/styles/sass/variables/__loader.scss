@@ -16,9 +16,10 @@ html, body {
   padding: 0;
 }
 
-.services-container{
-    background: linear-gradient($primary-gradient-start $primary-gradient-end,  45deg, 50deg);
+.services-container {
+  background: linear-gradient(45deg, $primary-gradient-start, $primary-gradient-end);
 }
+
 .strain {
   width: 155px;
   height: 1px;
