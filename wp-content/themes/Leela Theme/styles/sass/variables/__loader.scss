@@ -16,6 +16,10 @@ html, body {
   padding: 0;
 }
 
+.services-container {
+  background: linear-gradient(45deg, $primary-gradient-start, $primary-gradient-end);
+}
+
 .strain {
   width: 155px;
   height: 1px;
@@ -32,7 +36,7 @@ html, body {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-color: $primary-gradient-end; // from your theme
+    background-color: $white; // from your theme
     margin-top: -9px;
   }
 
