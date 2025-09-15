@@ -15,7 +15,8 @@ function leelaHoldings_enqueue_scripts() {
     // Register scripts 
     wp_register_script( 'main-js', get_template_directory_uri() . '/assets/main.js', [], filemtime(get_template_directory() . '/assets/main.js'), true);
     wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/assets/src/library/js/bootstrap.min.js', ['jquery'], false, true);
-    wp_register_script( 'card-js', get_template_directory_uri() . '/assets/cards.js', filemtime(get_template_directory() . '/assets/cards.js'), true);
+    wp_register_script( 'cards-js', get_template_directory_uri() . '/assets/cards.js', [], filemtime(get_template_directory() . '/assets/cards.js'), true );
+
     // Enqueue styles 
     wp_enqueue_style('style-css');
     wp_enqueue_style('bootstrap-css');
@@ -23,7 +24,7 @@ function leelaHoldings_enqueue_scripts() {
     // Enqueue scripts 
     wp_enqueue_script('main-js');
     wp_enqueue_script('bootstrap-js');
-    wp_enqueue_script('cards.js');
+    wp_enqueue_script('cards-js');
 }
 add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
 // Enqueue SCSS compiled main.css
