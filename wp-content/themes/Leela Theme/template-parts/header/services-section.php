@@ -4,7 +4,8 @@
  * @package customtheme
  */
 ?>
-
+<main class="bg-white py-5">
+    <div class="container">
 <div class="row g-4 justify-content-center services-grid">
 
       <div class="col-lg-4 col-md-6">
@@ -30,5 +31,6 @@
           <a href="mailto:leelasonscorporation@gmail.com" class="btn" target="_blank">Read More</a>
         </div>
       </div>
-
-    </div><!-- /.row -->
+</div>
+    </div>
+    </main>

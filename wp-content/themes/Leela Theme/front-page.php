@@ -10,12 +10,12 @@ get_header();
   get_template_part('/template-parts/header/hero-banner');
 
 ?>
-   <main id="main" class="site-main bg-white py-5">
+   <main id="main" class="site-main">
   <div class="container">
     <?php 
   get_template_part('/template-parts/header/services-section');
      ?>
-  </div><!-- /.container -->
+  </div>
 
 <?php 
     if ( have_posts() ) {
