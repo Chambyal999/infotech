@@ -14,6 +14,7 @@ get_header();
   <div class="container-fluid">
     <?php 
   get_template_part('/template-parts/header/services-section');
+  echo do_shortcode('[forminator_form id="105"]');
      ?>
   </div>
 
