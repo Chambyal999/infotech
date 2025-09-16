@@ -1,4 +1,9 @@
 <?php
+/*
+ * Banner Template
+ * @package Leela infotech
+*/
+
 // Base URL of your site
 $base_url = "https://infotech.leelaholdings.in";
 
@@ -7,22 +12,22 @@ $images = [
     [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "First Image", 
      "class" => "my-img h-100",
-     "title" => "Welcome to Shimla",
-     "description" => "Experience the serene beauty of the hills.",
+     "title" => "Empathy in Every Line of Code",
+     "description" => "We listen first then build software that fits your narrative.",
      "button" => "Click Here" ],
 
     [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "Second Image",
      "class" => "my-img h-100",
-     "title" => "Adventure Awaits",
-     "description" => "Explore the mountains and valleys.",
+     "title" => "Your Goals, Engineered for Growth",
+     "description" => "Strategy, design, and code that drive measurable outcomes.",
     "button" => "Click Here" ],
 
     [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "Third Image",
      "class" => "my-img h-100",
-    "title" => "Relax & Unwind",
-    "description" => "Find peace in nature's embrace.",
+    "title" => "From Idea to Impact",
+    "description" => "Design, development & mobile app expertise—all aiming for tangible results.",
     "button" => "Click Here" ]
 
 ];

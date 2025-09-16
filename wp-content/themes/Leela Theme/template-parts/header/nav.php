@@ -1,7 +1,7 @@
 <?php 
 /**
  * Header Navigation Template
- * @package customtheme
+ * @package Leela infotech
  */
 
 $site_logo =[
