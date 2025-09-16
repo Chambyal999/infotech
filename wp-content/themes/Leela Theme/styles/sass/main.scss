@@ -124,7 +124,7 @@ list-style: none;
 
 
 .header-background{
-  max-height: 500px !important;
+  height: 500px !important;
 }
 
 
@@ -161,7 +161,7 @@ footer {
   color: $footer-text;
 }
 .bg-diagonal-tech {
-  background: linear-gradient(45deg, $tech-blue, $transparent);
+  background: linear-gradient(45deg, $primary-gradient-start, $primary-gradient-end);
 }
 
 
