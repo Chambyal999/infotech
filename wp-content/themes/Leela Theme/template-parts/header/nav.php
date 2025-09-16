@@ -3,12 +3,18 @@
  * Header Navigation Template
  * @package customtheme
  */
+
+$site_logo =[
+       "url"  => "/wp-content/uploads/2025/09/site-logo.png",
+       "alt" => "Leela Infotech Logo", 
+       "class" => "img-logo"
+     ];
 ?>
       
      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <header class="container">
-    <a class="navbar-brand" href="#">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>">
+  <div class="container">
+    <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
+      <img src="<?php echo esc_url(get_site_url() . $site_logo["url"]) ?>" alt="<?php echo esc_attr($site_logo["alt"]); ?>"  class="<?php echo esc_attr($site_logo["class"]); ?>">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,5 +30,5 @@
         ));
       ?>
     </div>
-      </header>
+      </div>
 </nav>
