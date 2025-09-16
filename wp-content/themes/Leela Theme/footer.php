@@ -23,14 +23,14 @@ $footer_images = [
         <footer class="bg-black text-white text-start footer-container">
             <main class="d-flex flex-column">
                 <div class="container py-5">
-                    <div class="row pt-4">
+                    <div class="row pt-4 text-center">
                         <div class="col-lg-4 col-md-6 mb-4">
                             <h5>Leela Infotech, Inc.</h5>
-                            <p class="text-12 text-start">Designed by Atul Chambyal.</p>
+                            <p class="text-12">Designed by Atul Chambyal.</p>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-8 col-md-12">
                     <section class="row">
-                        <div class="col-lg-6 col-md-12 mb-4 footer-menu ">
+                        <div class="col-lg-6 col-md-12 col-12 mb-4 footer-menu ">
                              <p class="menu-item mb-0"><a href="mailto:leelasonscorporation@gmail.com">leelasonscorporation@gmail.com</a></p>
                             <p class="menu-item"><a href="tel:7807982499">+91 78079-82499</a></p>
                         </div>
@@ -38,7 +38,7 @@ $footer_images = [
                         
                         <section class="col-lg-6">
                             <div class="row">
-                        <div class="col-lg-6 col-md-4 mb-4">
+                        <div class="col-lg-6 col-md-4 col-6 mb-4">
                            <?php
                             wp_nav_menu(array(
                                 'theme_location' => 'footer-menu-1',
@@ -47,7 +47,7 @@ $footer_images = [
                             ));
                             ?>
                         </div>
-                        <div class="col-lg-6 col-md-4 mb-4">
+                        <div class="col-lg-6 col-md-4 col-6 mb-4">
                            <?php
                             wp_nav_menu(array(
                                 'theme_location' => 'footer-menu-2',
