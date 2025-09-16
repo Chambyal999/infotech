@@ -14,7 +14,7 @@ get_header();
   <div class="container-fluid p-0">
     <?php 
   get_template_part('/template-parts/services-section');
-  get_template_part('/template-parts/dna-about.php');
+  get_template_part('/template-parts/dna-about');
 
      ?>
   </div>
