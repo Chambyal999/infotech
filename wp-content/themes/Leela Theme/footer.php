@@ -68,10 +68,11 @@ $footer_images = [
                                   <a href="#"><i class="fab fa-github"></i></a>
                                   <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
-                         <div class=" text-center p-2 border-top">© 2025 Leela INC. All rights reserved.</p></div>
                 </div>
 
-               
+                <div class="container">
+                      <div class=" text-start px-5 border-top">© 2025 Leela INC. All rights reserved.</p></div>
+                </div>
             </main>
         </footer>
     </footer>
