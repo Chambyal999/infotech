@@ -20,7 +20,7 @@ $footer_images = [
 
     <footer class="position-relative main-footer">
        
-        <footer class="bg-black text-white text-start footer-container">
+        <footer class="text-white text-start footer-container" style="background-color: #231f20;">
             <main class="d-flex flex-column">
                 <div class="container py-5">
                     <div class="row pt-4 text-center">
@@ -68,9 +68,10 @@ $footer_images = [
                                   <a href="#"><i class="fab fa-github"></i></a>
                                   <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
+                         <div class=" text-center p-2 border-top">© 2025 Leela INC. All rights reserved.</p></div>
                 </div>
 
-                <div class="bg-secondary text-center p-2">© 2025 Leela INC. All rights reserved.</p></div>
+               
             </main>
         </footer>
     </footer>
