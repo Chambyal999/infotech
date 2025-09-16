@@ -24,13 +24,13 @@ $footer_images = [
             <main class="d-flex flex-column">
                 <div class="container py-5">
                     <div class="row pt-4 text-center">
-                        <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="col-lg-4 col-md-6">
                             <h5>Leela Infotech, Inc.</h5>
                             <p class="text-12">Designed by Atul Chambyal.</p>
                         </div>
-                        <div class="col-lg-8 col-md-12">
+                        <div class="col-lg-8 col-md-6">
                     <section class="row">
-                        <div class="col-lg-6 col-md-12 col-12 mb-4 footer-menu ">
+                        <div class="col-lg-6 col-md-6 col-12 mb-4 footer-menu ">
                              <p class="menu-item mb-0"><a href="mailto:leelasonscorporation@gmail.com">leelasonscorporation@gmail.com</a></p>
                             <p class="menu-item"><a href="tel:7807982499">+91 78079-82499</a></p>
                         </div>
