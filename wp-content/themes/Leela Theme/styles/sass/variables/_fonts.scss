@@ -2,7 +2,7 @@
 // FONT SIZES & TYPOGRAPHY
 // ==============================
 
-// Base font sizes
+// Font Sizes
 $font-xs: 0.75rem;   // 12px
 $font-sm: 0.875rem;  // 14px
 $font-md: 1rem;      // 16px default
@@ -11,7 +11,7 @@ $font-xl: 1.5rem;    // 24px
 $font-xxl: 2rem;     // 32px
 $font-xxxl: 3rem;    // 48px
 
-// Headings (semantic mapping)
+// Headings (semantic mapping) – fallback values
 $h1-size: $font-xxxl; // 48px
 $h2-size: $font-xxl;  // 32px
 $h3-size: $font-xl;   // 24px
@@ -26,13 +26,13 @@ $small-font-size: $font-sm;
 // ==============================
 // LINE HEIGHTS
 // ==============================
-$line-height-xs: 1rem;     
-$line-height-sm: 1.25rem;  
-$line-height-md: 1.5rem;   
-$line-height-lg: 2rem;     
-$line-height-xl: 2.5rem;   
-$line-height-xxl: 3rem;    
-$line-height-xxxl: 3.5rem; 
+$line-height-xs: 1rem;      // 16px for 12px text
+$line-height-sm: 1.25rem;   // 20px for 14px text
+$line-height-md: 1.5rem;    // 24px for 16px text
+$line-height-lg: 2rem;      // 28px for 20px text
+$line-height-xl: 2.5rem;    // 32px for 24px text
+$line-height-xxl: 3rem;     // 40px for 32px text
+$line-height-xxxl: 3.5rem;  // 56px for 48px text
 
 // Letter Spacing
 $letter-spacing-sm: 0.5px;
@@ -46,53 +46,9 @@ $fw-semibold: 600;
 $fw-bold: 700;
 $fw-black: 900;
 
-// ==============================
-// RESPONSIVE HEADINGS WITH CLAMP
-// (balanced for normal content)
-// ==============================
-
-h1, .h1 {
-  font-size: clamp(1.8rem, 4vw + 1rem, 2.8rem); // max ~45px
-  line-height: clamp(2.2rem, 4.5vw + 1rem, 3rem);
-}
-
-h2, .h2 {
-  font-size: clamp(1.4rem, 3.5vw + 0.5rem, 2rem); // max ~32px
-  line-height: clamp(1.8rem, 4vw + 0.5rem, 2.5rem);
-}
-
-h3, .h3 {
-  font-size: clamp(1.25rem, 3vw + 0.5rem, $h3-size);
-  line-height: clamp(1.75rem, 3.5vw + 0.5rem, $line-height-xl);
-}
-
-h4, .h4 {
-  font-size: clamp(1rem, 2.5vw + 0.5rem, $h4-size);
-  line-height: clamp(1.5rem, 3vw + 0.5rem, $line-height-lg);
-}
-
-h5, .h5 {
-  font-size: clamp(0.875rem, 2vw + 0.25rem, $h5-size);
-  line-height: clamp(1.25rem, 2.5vw + 0.5rem, $line-height-md);
-}
-
-h6, .h6 {
-  font-size: clamp(0.75rem, 1.5vw + 0.25rem, $h6-size);
-  line-height: clamp(1rem, 2vw + 0.25rem, $line-height-sm);
-}
 
 // ==============================
-// SPECIAL CLASS FOR HERO / BANNER HEADINGS
-// (optional: larger but still safe)
-// ==============================
-.banner-heading {
-  font-size: clamp(2rem, 5vw + 1rem, 3rem);      // max ~48px
-  line-height: clamp(2.5rem, 6vw + 1rem, 3.5rem);
-  font-weight: $fw-bold;
-}
-
-// ==============================
-// UTILITY TEXT SIZES (fixed)
+// UTILITY CLASSES
 // ==============================
 .text-12 {
   font-size: $font-xs;
@@ -107,4 +63,47 @@ h6, .h6 {
 .text-16 {
   font-size: $font-md;
   line-height: $line-height-md;
+}
+
+// ==============================
+// RESPONSIVE HEADINGS with clamp()
+// ==============================
+
+// H1
+.h1 {
+  font-size: clamp(2rem, 4vw + 1rem, 3rem); // min 32px max 48px
+  line-height: clamp(2.5rem, 4vw + 1rem, 3.5rem);
+  font-weight: $fw-bold;
+}
+
+// H2
+.h2 {
+  font-size: clamp(1.5rem, 3vw + 1rem, 2rem); // min 24px max 32px
+  line-height: clamp(2rem, 3vw + 1rem, 2.5rem);
+  font-weight: $fw-semibold;
+}
+
+// H3
+.h3 {
+  font-size: clamp(1.25rem, 2vw + 1rem, 1.5rem); // min 20px max 24px
+  line-height: clamp(1.75rem, 2vw + 1rem, 2rem);
+}
+
+// H4
+.h4 {
+  font-size: clamp(1.125rem, 1.5vw + 1rem, 1.25rem); // 18px to 20px
+  line-height: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+}
+
+// Paragraphs
+p {
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.125rem); // 16–18px
+  line-height: 1.6;
+}
+
+// Small text
+small,
+.text-small {
+  font-size: $small-font-size;
+  line-height: $line-height-sm;
 }
