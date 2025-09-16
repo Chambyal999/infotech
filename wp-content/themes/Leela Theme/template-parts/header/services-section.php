@@ -16,7 +16,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+      <div class="col-lg-4 col-md-6 d-flex justify-content-center d-none d-lg-block">
         <div class="card h-100" data-tilt>
           <h2>Web Development</h2>
           <p>Robust, scalable web apps built with modern stacks and best practices for performance and security.</p>
@@ -24,7 +24,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+      <div class="col-lg-4 col-md-6 d-flex justify-content-center d-none d-lg-block">
         <div class="card h-100" data-tilt>
           <h2>Digital Marketing</h2>
           <p>Data-driven marketing, SEO and social strategies to grow traffic and conversions.</p>
