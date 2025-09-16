@@ -2,7 +2,7 @@
 // FONT SIZES & TYPOGRAPHY
 // ==============================
 
-// Font Sizes (base)
+// Base font sizes
 $font-xs: 0.75rem;   // 12px
 $font-sm: 0.875rem;  // 14px
 $font-md: 1rem;      // 16px default
@@ -47,44 +47,53 @@ $fw-bold: 700;
 $fw-black: 900;
 
 // ==============================
-// FLUID / RESPONSIVE HEADINGS
-// Using clamp() to scale automatically
+// RESPONSIVE HEADINGS WITH CLAMP
+// (balanced for normal content)
 // ==============================
 
-.h1 {
-  font-size: clamp(2rem, 5vw + 1rem, $h1-size); 
-  line-height: clamp(2.5rem, 6vw + 1rem, $line-height-xxxl);
+h1, .h1 {
+  font-size: clamp(1.8rem, 4vw + 1rem, 2.8rem); // max ~45px
+  line-height: clamp(2.2rem, 4.5vw + 1rem, 3rem);
 }
 
-.h2 {
-  font-size: clamp(1.5rem, 3.5vw + 0.5rem, $h2-size);
-  line-height: clamp(2rem, 4vw + 1rem, $line-height-xxl);
+h2, .h2 {
+  font-size: clamp(1.4rem, 3.5vw + 0.5rem, 2rem); // max ~32px
+  line-height: clamp(1.8rem, 4vw + 0.5rem, 2.5rem);
 }
 
-.h3 {
+h3, .h3 {
   font-size: clamp(1.25rem, 3vw + 0.5rem, $h3-size);
   line-height: clamp(1.75rem, 3.5vw + 0.5rem, $line-height-xl);
 }
 
-.h4 {
+h4, .h4 {
   font-size: clamp(1rem, 2.5vw + 0.5rem, $h4-size);
   line-height: clamp(1.5rem, 3vw + 0.5rem, $line-height-lg);
 }
 
-.h5 {
+h5, .h5 {
   font-size: clamp(0.875rem, 2vw + 0.25rem, $h5-size);
   line-height: clamp(1.25rem, 2.5vw + 0.5rem, $line-height-md);
 }
 
-.h6 {
+h6, .h6 {
   font-size: clamp(0.75rem, 1.5vw + 0.25rem, $h6-size);
   line-height: clamp(1rem, 2vw + 0.25rem, $line-height-sm);
 }
 
 // ==============================
-// Utility text sizes remain fixed
+// SPECIAL CLASS FOR HERO / BANNER HEADINGS
+// (optional: larger but still safe)
 // ==============================
+.banner-heading {
+  font-size: clamp(2rem, 5vw + 1rem, 3rem);      // max ~48px
+  line-height: clamp(2.5rem, 6vw + 1rem, 3.5rem);
+  font-weight: $fw-bold;
+}
 
+// ==============================
+// UTILITY TEXT SIZES (fixed)
+// ==============================
 .text-12 {
   font-size: $font-xs;
   line-height: $line-height-xs;
