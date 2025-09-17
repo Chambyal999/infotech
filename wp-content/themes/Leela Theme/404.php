@@ -2,14 +2,9 @@
 /*
  * @package Leela infotech
 */
-?>
 
- <div id="page" class="site">
-    <header id="masthead" class="site_header">
-    <?php get_template_part( '/template-parts/header/nav'); 
-    ?>
-    </header>
-    </div>
+get_header();
+?>
 
 <main class="error-404 not-found" style="text-align:center; padding: 80px 20px;">
     <h1 style="font-size:3rem; color:#111;">404 – Page Not Found</h1>
