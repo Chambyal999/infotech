@@ -1,8 +1,12 @@
-  body {
-      background: #000;
+@use "colors" as *;
+@use "_fonts" as *;
+
+
+body {
+      background: $white;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
-      color: #fff;
+      color: $white;
       margin: 0;
       padding: 0;
     }
@@ -14,8 +18,8 @@
 
     swiper-slide {
       text-align: center;
-      font-size: 18px;
-      background: #444;
+      font-size: $font-sm;
+      background: $gray-800;
       display: flex;
       justify-content: center;
       align-items: center;
