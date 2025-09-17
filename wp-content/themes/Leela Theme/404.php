@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<main class="error-404 not-found" style="text-align:center; padding: 80px 20px;">
+<main class="error-404 not-found justify-content-center d-flex  flex-column" style="text-align:center; padding: 80px 20px;">
     <h1 style="font-size:3rem; color:#111;">404 – Page Not Found</h1>
     <p style="font-size:1.2rem; margin:20px auto; max-width:600px; color:#555;">
         Looks like this page doesn’t exist. Don’t worry—we build better websites than this error! 🚀  
