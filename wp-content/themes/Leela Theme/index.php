@@ -9,7 +9,7 @@ get_header();
 
 <div id="primary">
     <main id="main" class="site-main mt-5 container" role="main">
-    <div class="p-5">
+    <div class="px-lg-5">
         <?php if( have_posts() ){     
          while ( have_posts() ) : the_post();  
          the_content();
