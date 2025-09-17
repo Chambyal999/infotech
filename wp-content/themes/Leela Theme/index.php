@@ -21,6 +21,41 @@ get_header();
     </main>
 </div>
 
+<!-- next previous button start  -->
+<section class="container">
+<?php
+$current_url = home_url( add_query_arg( NULL, NULL ) );
+
+$uiux  = "https://infotech.leelaholdings.in/ui-ux-design/";
+$web   = "https://infotech.leelaholdings.in/web-development/";
+$dm    = "https://infotech.leelaholdings.in/digital-marketing/";
+
+echo '<div class="d-flex justify-content-between mt-4">';
+
+if ($current_url == $uiux) {
+    // On first page → only NEXT
+    echo '<a href="' . $$dm . '" class="btn btn-primary">Previous</a>';
+    echo '<a href="' . $web . '" class="btn btn-primary">Next</a>';
+} 
+elseif ($current_url == $web) {
+    // On second page → PREVIOUS + NEXT
+    echo '<a href="' . $uiux . '" class="btn btn-primary">Previous</a>';
+    echo '<a href="' . $dm . '" class="btn btn-primary">Next</a>';
+} 
+elseif ($current_url == $dm) {
+    // On third page → only PREVIOUS
+    echo '<a href="' . $web . '" class="btn btn-primary">Previous</a>';
+    echo '<a href="' . $uiux . '" class="btn btn-primary">Next</a>';
+
+}
+
+echo '</div>';
+?>
+
+</section>
+
+
+<!-- next previous button end  -->
 
 <?php
 get_footer();
