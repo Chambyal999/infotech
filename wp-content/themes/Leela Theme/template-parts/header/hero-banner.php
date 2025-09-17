@@ -59,9 +59,9 @@ $images = [
             <?php endforeach; ?>
         </swiper-container>
     </div>
-<?php } else if (is_home()) { ?>
-                <div class="container text-white">
-                    <h1 class="h1 mb-4">
+<?php } else if (is_home() || (is_single() || (is_archive()))) { ?>
+                <div class="container text-black mt-5">
+                    <h1 class="h1 p-3">
                     <?php echo get_the_title(get_option('page_for_posts', true)); ?>
                     </h1>
                 </div>
