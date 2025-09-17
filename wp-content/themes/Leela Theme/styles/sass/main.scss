@@ -129,6 +129,11 @@ list-style: none;
 .header-background{
   height: 500px !important;
 }
+  @media only screen and (max-width:990px){
+.small-height{
+  max-height: 220px !important;
+  }
+}
 
 
 // Main color related to theme
