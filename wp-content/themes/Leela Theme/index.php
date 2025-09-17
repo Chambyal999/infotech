@@ -29,7 +29,6 @@ echo '<div class="d-flex gap-4">';
 
 if ($current_url == $uiux) {
     // On first page → only NEXT
-    echo '<a href="' . $$dm . '" class="btn btn-primary">Previous</a>';
     echo '<a href="' . $web . '" class="btn btn-primary">Next</a>';
 } 
 elseif ($current_url == $web) {
