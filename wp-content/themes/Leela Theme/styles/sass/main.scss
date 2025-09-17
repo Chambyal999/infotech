@@ -181,14 +181,13 @@ footer {
 
 // blogs home.php design start 
 .blog-page {
-  .card {
-    border-radius: 0.5rem;
-    transition: box-shadow 0.3s ease;
-
     .shadow-sm:hover {
       box-shadow: 2px 3px 15px rgba(0,0,0,0.1);
     }
-
+  .card {
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease;
+    
     .card-title {
       font-weight: 600;
       margin-bottom: 0.75rem;
