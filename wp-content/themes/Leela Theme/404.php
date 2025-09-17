@@ -3,7 +3,8 @@
  * @package Leela infotech
 */
 
-get_header();
+  get_template_part( '/template-parts/header/nav'); 
+
 ?>
 
 <main class="error-404 not-found" style="text-align:center; padding: 80px 20px;">
