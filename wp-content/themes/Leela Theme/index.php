@@ -39,7 +39,6 @@ elseif ($current_url == $web) {
 elseif ($current_url == $dm) {
     // On third page → only PREVIOUS
     echo '<a href="' . $web . '" class="btn btn-primary">Previous</a>';
-    echo '<a href="' . $uiux . '" class="btn btn-primary">Next</a>';
 }
 echo '</div>'; ?>
 </section>
