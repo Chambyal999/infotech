@@ -21,9 +21,9 @@ get_header();
 <?php
 $current_url = home_url( add_query_arg( NULL, NULL ) );
 
-$uiux  = "https://infotech.leelaholdings.in/ui-ux-design/";
-$web   = "https://infotech.leelaholdings.in/web-development/";
-$dm    = "https://infotech.leelaholdings.in/digital-marketing/";
+$uiux  = "https://infotech.leelaholdings.in/services/ui-ux-design/";
+$web   = "https://infotech.leelaholdings.in/services/web-development/";
+$dm    = "https://infotech.leelaholdings.in/services/digital-marketing/";
 
 echo '<div class="d-flex gap-4">';
 
