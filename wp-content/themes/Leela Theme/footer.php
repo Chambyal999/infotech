@@ -30,7 +30,7 @@ echo '<div class="d-flex justify-content-between mt-4">';
 
 if ($current_url == $uiux) {
     // On first page → only NEXT
-    echo '<div></div>'; // empty for spacing
+    echo '<a href="' . $$dm . '" class="btn btn-primary">Previous</a>';
     echo '<a href="' . $web . '" class="btn btn-primary">Next</a>';
 } 
 elseif ($current_url == $web) {
@@ -41,6 +41,8 @@ elseif ($current_url == $web) {
 elseif ($current_url == $dm) {
     // On third page → only PREVIOUS
     echo '<a href="' . $web . '" class="btn btn-primary">Previous</a>';
+    echo '<a href="' . $uiux . '" class="btn btn-primary">Next</a>';
+
 }
 
 echo '</div>';
