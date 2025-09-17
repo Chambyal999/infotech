@@ -59,13 +59,21 @@ $images = [
             <?php endforeach; ?>
         </swiper-container>
     </div>
-<?php } else if (is_home() || (is_single() || (is_archive()))) { ?>
+<?php } else if (is_home() (is_single() || (is_archive()))) { ?>
                 <div class="container text-black mt-5">
                     <h1 class="h1 p-3">
                     <?php echo get_the_title(get_option('page_for_posts', true)); ?>
                     </h1>
                 </div>
-<?php } else { ?>
+<?php } else if(is_single() || (is_archive())){ ?>
+ <section class="header-background small-height">
+            <div class="w-100 h-100 bg-black d-flex text-center align-items-center">
+                <div class="container text-white">
+                    <h1 class="font-h1-xl"><?php the_title(); ?></h1>
+                </div>
+            </div>
+        </section>
+<?php }else{ ?>
 
         <section class="header-background small-height">
             <div class="w-100 h-100 bg-black d-flex text-center align-items-center">
