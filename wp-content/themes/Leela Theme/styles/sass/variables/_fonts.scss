@@ -10,6 +10,9 @@ $font-lg: 1.25rem;   // 20px
 $font-xl: 1.5rem;    // 24px
 $font-xxl: 2rem;     // 32px
 $font-xxxl: 3rem;    // 48px
+$font-h1-xl-min: 4em;   // smallest size (mobile)
+$font-h1-xl-max: 8em;   // largest size (desktop)
+
 
 // Headings (semantic mapping)
 $h1-size: $font-xxxl; // 48px
@@ -50,6 +53,10 @@ $fw-black: 900;
 // RESPONSIVE HEADINGS WITH CLAMP
 // (balanced for normal content)
 // ==============================
+
+.font-h1-xl {
+  font-size: clamp($font-h1-xl-min, 5vw, $font-h1-xl-max);
+}
 
 h1, .h1 {
   font-size: clamp(1.8rem, 4vw + 1rem, 2.8rem); // max ~45px
