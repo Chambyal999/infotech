@@ -179,5 +179,50 @@ footer {
 }
 
 
+// blogs home.php design start 
+.blog-page {
+  .card {
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease;
 
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    }
+
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+      color: #555;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    
+    .page-numbers {
+      margin: 0 0.25rem;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      color: #333;
+
+      &.current {
+        background: #007bff;
+        color: #fff;
+        border-color: #007bff;
+      }
+
+      &:hover {
+        background: #f8f9fa;
+      }
+    }
+  }
+}
+
+// blogs home.php design end 
 

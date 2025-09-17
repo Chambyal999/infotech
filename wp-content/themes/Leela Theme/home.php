@@ -7,40 +7,52 @@
 get_header();
 ?>
 
-<div class="container blog-page">
-  <h1>Our Blog</h1>
+<div class="container blog-page py-5">
+  <h1 class="mb-4"><?php wp_title(''); ?></h1>
 
   <?php if ( have_posts() ) : ?>
-    <div class="blog-grid">
+    <div class="row g-4">
       <?php while ( have_posts() ) : the_post(); ?>
-        <article <?php post_class('blog-card'); ?>>
-          <?php if ( has_post_thumbnail() ) : ?>
-            <a href="<?php the_permalink(); ?>">
-              <?php the_post_thumbnail('medium'); ?>
-            </a>
-          <?php endif; ?>
+        <div class="col-md-4">
+          <article <?php post_class('card h-100 shadow-sm'); ?>>
+            
+            <?php if ( has_post_thumbnail() ) : ?>
+              <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail('medium', ['class' => 'card-img-top']); ?>
+              </a>
+            <?php endif; ?>
 
-          <h2>
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-          </h2>
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title fs-5">
+                <a href="<?php the_permalink(); ?>" class="stretched-link text-decoration-none text-dark">
+                  <?php the_title(); ?>
+                </a>
+              </h2>
 
-          <p class="meta"><?php echo get_the_date(); ?> | <?php the_author(); ?></p>
+              <p class="card-text small text-muted mb-2">
+                <?php echo get_the_date(); ?> | <?php the_author(); ?>
+              </p>
 
-          <div class="excerpt">
-            <?php the_excerpt(); ?>
-          </div>
-
-          <a href="<?php the_permalink(); ?>" class="read-more">Read More →</a>
-        </article>
+              <p class="card-text flex-grow-1">
+                <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
+              </p>
+            </div>
+          </article>
+        </div>
       <?php endwhile; ?>
     </div>
 
-    <div class="pagination">
-      <?php the_posts_pagination(); ?>
+    <div class="pagination mt-4">
+      <?php the_posts_pagination([
+        'prev_text' => __('« Prev'),
+        'next_text' => __('Next »'),
+      ]); ?>
     </div>
   <?php else : ?>
     <p>No posts found.</p>
   <?php endif; ?>
 </div>
+
+
 
 <?php get_footer(); ?>
