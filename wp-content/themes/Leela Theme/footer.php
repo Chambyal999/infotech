@@ -18,8 +18,9 @@ $footer_images = [
 ];
 ?>
 <!-- next previous button start  -->
-<?php
-// Define your ordered pages (replace IDs with your real ones)
+<section class="container">
+    <?php
+// Define pages in strict order (replace IDs with your real ones)
 $pages = array(
     132 => 'https://infotech.leelaholdings.in/ui-ux-design/',
     133 => 'https://infotech.leelaholdings.in/web-development/',
@@ -32,19 +33,27 @@ if (array_key_exists($current_id, $pages)) {
     $keys = array_keys($pages);
     $current_index = array_search($current_id, $keys);
 
-    // Previous page (only if not first)
+    echo '<div class="d-flex justify-content-between mt-4">';
+
+    // Show Previous only if not the first page
     if ($current_index > 0) {
         $prev_url = $pages[$keys[$current_index - 1]];
         echo '<a href="' . esc_url($prev_url) . '" class="btn btn-primary">Previous</a>';
+    } else {
+        echo '<div></div>'; // Empty div to keep spacing
     }
 
-    // Next page (only if not last)
+    // Show Next only if not the last page
     if ($current_index < count($keys) - 1) {
         $next_url = $pages[$keys[$current_index + 1]];
         echo '<a href="' . esc_url($next_url) . '" class="btn btn-primary">Next</a>';
     }
+
+    echo '</div>';
 }
 ?>
+</section>
+
 
 <!-- next previous button end  -->
 
