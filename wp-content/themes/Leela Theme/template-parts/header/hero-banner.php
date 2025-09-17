@@ -59,12 +59,7 @@ $images = [
         </swiper-container>
     </div>
     <?php }else if ( is_home() ){?>
-        <section class="header-background small-height">
-             <div class="w-100 h-100 bg-black d-flex text-center align-items-center">
-                            <div class="container text-white">
-                            </div>
-                        </div>
-        </section>
+                 <h1 class="font-h1-xl"><?php the_title(); ?></h1>
         <?php }else{ ?>
         
         <section class="header-background small-height">
