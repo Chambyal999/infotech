@@ -5,10 +5,6 @@
  * @package leelaHoldings
  */
 get_header();
-
-  // Hero Banner
-  get_template_part('/template-parts/header/hero-banner');
-
 ?>
    <main id="main" class="site-main">
   <div class="container-fluid p-0">
