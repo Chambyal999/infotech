@@ -9,21 +9,21 @@ $base_url = "https://infotech.leelaholdings.in";
 
 // Image paths (relative to root)
 $images = [
-    [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
+    [ "url" => "/services/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "First Image", 
      "class" => "my-img h-100",
      "title" => "Empathy in Every Line of Code",
      "description" => "We listen first then build software that fits your narrative.",
      "button" => "Click Here" ],
 
-    [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
+    [ "url" => "/services/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "Second Image",
      "class" => "my-img h-100",
      "title" => "Your Goals, Engineered for Growth",
      "description" => "Strategy, design, and code that drive measurable outcomes.",
     "button" => "Click Here" ],
 
-    [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
+    [ "url" => "/services/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "Third Image",
      "class" => "my-img h-100",
     "title" => "From Idea to Impact",
@@ -32,8 +32,8 @@ $images = [
 
 ];
 ?>
-<div class="header-background">
    <?php if(is_front_page()){ ?>
+<div class="header-background">
         <swiper-container class="mySwiper" 
             space-between="30"
             centered-slides="true" 
@@ -57,12 +57,14 @@ $images = [
                 </swiper-slide>
             <?php endforeach; ?>
         </swiper-container>
-       <?php } else{ ?>
+    </div>
+    <?php } else{ ?>
         
-         <div class="w-100 h-100 bg-black d-flex text-center align-items-center">
+        <section class="header-background small-height">
+             <div class="w-100 h-100 bg-black d-flex text-center align-items-center">
                             <div class="container text-white">
                                 <h1 class="h1"><?php the_title(); ?></h1>
                             </div>
                         </div>
+        </section>
         <?php } ?>
-    </div>
