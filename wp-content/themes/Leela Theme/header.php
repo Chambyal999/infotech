@@ -22,8 +22,10 @@
     <header id="masthead" class="site_header">
     <?php get_template_part( '/template-parts/header/nav'); 
       // Hero Banner
+if( ! is_404() ){
          get_template_part('/template-parts/header/hero-banner');
-    ?>
+}
+?>
     
     </header>
     </div>
