@@ -63,7 +63,7 @@ $images = [
         <section class="header-background small-height">
              <div class="w-100 h-100 bg-black d-flex text-center align-items-center">
                             <div class="container text-white">
-                                <h1 class="h1"><?php the_title(); ?></h1>
+                                <h1 class="font-h1-xl"><?php the_title(); ?></h1>
                             </div>
                         </div>
         </section>
