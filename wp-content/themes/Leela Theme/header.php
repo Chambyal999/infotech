@@ -20,6 +20,10 @@
 
     <div id="page" class="site">
     <header id="masthead" class="site_header">
-    <?php get_template_part( '/template-parts/header/nav'); ?>
+    <?php get_template_part( '/template-parts/header/nav'); 
+      // Hero Banner
+         get_template_part('/template-parts/header/hero-banner');
+    ?>
+    
     </header>
     </div>
