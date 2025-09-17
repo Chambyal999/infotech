@@ -18,9 +18,9 @@ get_header();
     ?>
     </div>
     </div>
-    </main>
-</div>
 
+
+    
 <!-- next previous button start  -->
 <section class="container">
 <?php
@@ -46,16 +46,14 @@ elseif ($current_url == $dm) {
     // On third page → only PREVIOUS
     echo '<a href="' . $web . '" class="btn btn-primary">Previous</a>';
     echo '<a href="' . $uiux . '" class="btn btn-primary">Next</a>';
-
 }
-
-echo '</div>';
-?>
-
+echo '</div>'; ?>
 </section>
-
-
 <!-- next previous button end  -->
+
+    </main>
+</div>
+
 
 <?php
 get_footer();
