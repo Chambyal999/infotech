@@ -59,7 +59,7 @@ $images = [
         </swiper-container>
        <?php } else{ ?>
         
-         <div class="w-100 h-100 bg-black d-flex text-start align-items-center">
+         <div class="w-100 h-100 bg-black d-flex text-center align-items-center">
                             <div class="container text-white">
                                 <h1 class="h1"><?php the_title(); ?></h1>
                             </div>
