@@ -19,8 +19,8 @@ $footer_images = [
 ?>
 <!-- next previous button start  -->
 <section class="container">
-    <?php
-// Define pages in strict order (replace IDs with your real ones)
+  <?php
+// Define your ordered pages with their actual WordPress IDs
 $pages = array(
     132 => 'https://infotech.leelaholdings.in/ui-ux-design/',
     133 => 'https://infotech.leelaholdings.in/web-development/',
@@ -29,29 +29,32 @@ $pages = array(
 
 $current_id = get_the_ID();
 
-if (array_key_exists($current_id, $pages)) {
+if (isset($pages[$current_id])) {
     $keys = array_keys($pages);
     $current_index = array_search($current_id, $keys);
 
     echo '<div class="d-flex justify-content-between mt-4">';
 
-    // Show Previous only if not the first page
+    // Show Previous if not first page
     if ($current_index > 0) {
-        $prev_url = $pages[$keys[$current_index - 1]];
+        $prev_id  = $keys[$current_index - 1];
+        $prev_url = $pages[$prev_id];
         echo '<a href="' . esc_url($prev_url) . '" class="btn btn-primary">Previous</a>';
     } else {
-        echo '<div></div>'; // Empty div to keep spacing
+        echo '<div></div>'; // keep spacing
     }
 
-    // Show Next only if not the last page
+    // Show Next if not last page
     if ($current_index < count($keys) - 1) {
-        $next_url = $pages[$keys[$current_index + 1]];
+        $next_id  = $keys[$current_index + 1];
+        $next_url = $pages[$next_id];
         echo '<a href="' . esc_url($next_url) . '" class="btn btn-primary">Next</a>';
     }
 
     echo '</div>';
 }
 ?>
+
 </section>
 
 
