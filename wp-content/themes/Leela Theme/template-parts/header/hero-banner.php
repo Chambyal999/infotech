@@ -9,21 +9,21 @@ $base_url = "https://infotech.leelaholdings.in";
 
 // Image paths (relative to root)
 $images = [
-    [ "url" => "/services/wp-content/uploads/2025/09/workers-scaled.jpg",
+    [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "First Image", 
      "class" => "my-img h-100",
      "title" => "Empathy in Every Line of Code",
      "description" => "We listen first then build software that fits your narrative.",
      "button" => "Click Here" ],
 
-    [ "url" => "/services/wp-content/uploads/2025/09/workers-scaled.jpg",
+    [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "Second Image",
      "class" => "my-img h-100",
      "title" => "Your Goals, Engineered for Growth",
      "description" => "Strategy, design, and code that drive measurable outcomes.",
     "button" => "Click Here" ],
 
-    [ "url" => "/services/wp-content/uploads/2025/09/workers-scaled.jpg",
+    [ "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
      "alt" => "Third Image",
      "class" => "my-img h-100",
     "title" => "From Idea to Impact",
