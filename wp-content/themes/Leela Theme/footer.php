@@ -19,7 +19,7 @@ $footer_images = [
 ?>
 <!-- next previous button start  -->
 <?php
-// Page IDs in correct order (replace with your real IDs for ui-ux, web-dev, digital-marketing)
+// Define your ordered pages (replace IDs with your real ones)
 $pages = array(
     132 => 'https://infotech.leelaholdings.in/ui-ux-design/',
     133 => 'https://infotech.leelaholdings.in/web-development/',
@@ -32,21 +32,20 @@ if (array_key_exists($current_id, $pages)) {
     $keys = array_keys($pages);
     $current_index = array_search($current_id, $keys);
 
-    // Previous page (wrap around)
-    $prev_index = ($current_index - 1 + count($keys)) % count($keys);
-    $prev_url = $pages[$keys[$prev_index]];
+    // Previous page (only if not first)
+    if ($current_index > 0) {
+        $prev_url = $pages[$keys[$current_index - 1]];
+        echo '<a href="' . esc_url($prev_url) . '" class="btn btn-primary">Previous</a>';
+    }
 
-    // Next page (wrap around)
-    $next_index = ($current_index + 1) % count($keys);
-    $next_url = $pages[$keys[$next_index]];
-    ?>
+    // Next page (only if not last)
+    if ($current_index < count($keys) - 1) {
+        $next_url = $pages[$keys[$current_index + 1]];
+        echo '<a href="' . esc_url($next_url) . '" class="btn btn-primary">Next</a>';
+    }
+}
+?>
 
-    <div class="d-flex justify-content-between mt-4">
-        <a href="<?php echo esc_url($prev_url); ?>" class="btn btn-primary">Previous</a>
-        <a href="<?php echo esc_url($next_url); ?>" class="btn btn-primary">Next</a>
-    </div>
-
-<?php } ?>
 <!-- next previous button end  -->
 
 <!-- Footer start     -->
