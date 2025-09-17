@@ -16,13 +16,8 @@ get_header();
     endwhile;
     }
     ?>
-    </div>
-    </div>
-
-
-    
-<!-- next previous button start  -->
-<section class="container">
+    <!-- next previous button start  -->
+<section class="pb-lg-5 pb-4">
 <?php
 $current_url = home_url( add_query_arg( NULL, NULL ) );
 
@@ -30,7 +25,7 @@ $uiux  = "https://infotech.leelaholdings.in/ui-ux-design/";
 $web   = "https://infotech.leelaholdings.in/web-development/";
 $dm    = "https://infotech.leelaholdings.in/digital-marketing/";
 
-echo '<div class="d-flex justify-content-between mt-4">';
+echo '<div class="d-flex gap-4">';
 
 if ($current_url == $uiux) {
     // On first page → only NEXT
@@ -50,6 +45,12 @@ elseif ($current_url == $dm) {
 echo '</div>'; ?>
 </section>
 <!-- next previous button end  -->
+    </div>
+    </div>
+
+
+    
+
 
     </main>
 </div>
