@@ -33,6 +33,7 @@ $images = [
 ];
 ?>
 <div class="header-background">
+   <?php if(is_front_page()){ ?>
         <swiper-container class="mySwiper" 
             space-between="30"
             centered-slides="true" 
@@ -56,4 +57,12 @@ $images = [
                 </swiper-slide>
             <?php endforeach; ?>
         </swiper-container>
+       <?php } else{ ?>
+        
+         <div class="w-100 h-100 bg-black d-flex text-start align-items-center">
+                            <div class="container text-white">
+                                <h1 class="h1"><?php the_title(); ?></h1>
+                            </div>
+                        </div>
+        <?php } ?>
     </div>
