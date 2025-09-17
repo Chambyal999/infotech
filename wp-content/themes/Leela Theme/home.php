@@ -8,6 +8,7 @@ get_header();
 ?>
 
 <div class="container blog-page py-5">
+  <h1 class="mb-4"><?php wp_title(''); ?></h1>
 
   <?php if ( have_posts() ) : ?>
     <div class="row g-4">
