@@ -59,7 +59,9 @@ $images = [
         </swiper-container>
     </div>
     <?php }else if ( is_home() ){?>
-                   <h1 class="mb-4"><?php wp_title(''); ?></h1>
+                  <h1 class="font-h1-xl mb-4">
+        <?php echo get_the_title( get_option('page_for_posts', true) ); ?>
+    </h1>
         <?php }else{ ?>
         
         <section class="header-background small-height">
