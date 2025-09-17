@@ -19,39 +19,33 @@ $footer_images = [
 ?>
 <!-- next previous button start  -->
 <section class="container">
-    <?php
-// Define pages in strict order (replace IDs with your real ones)
-$pages = array(
-    132 => 'https://infotech.leelaholdings.in/ui-ux-design/',
-    133 => 'https://infotech.leelaholdings.in/web-development/',
-    134 => 'https://infotech.leelaholdings.in/digital-marketing/'
-);
+<?php
+$current_url = home_url( add_query_arg( NULL, NULL ) );
 
-$current_id = get_the_ID();
+$uiux  = "https://infotech.leelaholdings.in/ui-ux-design/";
+$web   = "https://infotech.leelaholdings.in/web-development/";
+$dm    = "https://infotech.leelaholdings.in/digital-marketing/";
 
-if (array_key_exists($current_id, $pages)) {
-    $keys = array_keys($pages);
-    $current_index = array_search($current_id, $keys);
+echo '<div class="d-flex justify-content-between mt-4">';
 
-    echo '<div class="d-flex justify-content-between mt-4">';
-
-    // Show Previous only if not the first page
-    if ($current_index > 0) {
-        $prev_url = $pages[$keys[$current_index - 1]];
-        echo '<a href="' . esc_url($prev_url) . '" class="btn btn-primary">Previous</a>';
-    } else {
-        echo '<div></div>'; // Empty div to keep spacing
-    }
-
-    // Show Next only if not the last page
-    if ($current_index < count($keys) - 1) {
-        $next_url = $pages[$keys[$current_index + 1]];
-        echo '<a href="' . esc_url($next_url) . '" class="btn btn-primary">Next</a>';
-    }
-
-    echo '</div>';
+if ($current_url == $uiux) {
+    // On first page → only NEXT
+    echo '<div></div>'; // empty for spacing
+    echo '<a href="' . $web . '" class="btn btn-primary">Next</a>';
+} 
+elseif ($current_url == $web) {
+    // On second page → PREVIOUS + NEXT
+    echo '<a href="' . $uiux . '" class="btn btn-primary">Previous</a>';
+    echo '<a href="' . $dm . '" class="btn btn-primary">Next</a>';
+} 
+elseif ($current_url == $dm) {
+    // On third page → only PREVIOUS
+    echo '<a href="' . $web . '" class="btn btn-primary">Previous</a>';
 }
+
+echo '</div>';
 ?>
+
 </section>
 
 
