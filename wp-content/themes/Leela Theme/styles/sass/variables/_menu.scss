@@ -13,6 +13,6 @@
 .sub-menu{
     display: none;
 }
-.sub-menu:hover{
+.menu-item:hover .sub-menu{
 display: block;
 }
