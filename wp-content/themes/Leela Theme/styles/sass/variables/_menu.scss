@@ -23,8 +23,23 @@
         color:$neon;
     }
     }
-   
+
+    // Chevron style
+      &:has(.sub-menu)::after {
+    content: url("/images/chevron/chevron.png");
+    font-size: 0.7em;
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+  }
+
+  // Rotate arrow when active/hover
+  &:hover:has(.sub-menu)::after {
+    transform: rotate(180deg);
+  }
 }
+
 .footer-menu .menu-item{
   list-style: none;
     padding: $space-xs;
