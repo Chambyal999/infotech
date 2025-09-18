@@ -11,7 +11,7 @@ $site_logo =[
      ];
 ?>
       
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100 z-3 ">
   <div class="container">
     <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
       <img src="<?php echo esc_url(get_template_directory_uri() . '/' . $site_logo["url"]) ?>" alt="<?php echo esc_attr($site_logo["alt"]); ?>"  class="<?php echo esc_attr($site_logo["class"]); ?>">
