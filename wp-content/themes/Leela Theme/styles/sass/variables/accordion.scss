@@ -1,9 +1,12 @@
- /* Horizontal line */
+@use "colors" as *;
+
+
+/* Horizontal line */
     .collapsible-link::before {
       content: '';
       width: 14px;
       height: 2px;
-      background: #333;
+      background: $light-dark;
       position: absolute;
       top: calc(50% - 1px);
       right: 1rem;
@@ -16,11 +19,8 @@
       content: '';
       width: 2px;
       height: 14px;
-<<<<<<< HEAD
-      background: #333; 
-=======
-      background: #333;
->>>>>>> bbbb57f (Accordion css)
+      background: $light-dark; 
+      background: $background-light;
       position: absolute;
       top: calc(50% - 7px);
       right: calc(1rem + 6px);
