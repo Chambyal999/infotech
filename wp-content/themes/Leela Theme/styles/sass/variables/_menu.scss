@@ -45,7 +45,7 @@
     .menu-item:hover{
         background-color: $white;
 
-        a{
+       & a{
             color: $black
         }
     }
