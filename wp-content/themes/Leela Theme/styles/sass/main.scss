@@ -27,9 +27,7 @@
 @use "variables/cards";
 @use "variables/_loader";
 
-body{
-  max-width: 1210px;
-}
+
 .entry-content{
   max-width: 1210px;
 }
@@ -41,6 +39,8 @@ list-style: none;
     color:$white;
 }
 }
+
+
 
 .header-background{
   height: 500px !important;
