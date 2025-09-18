@@ -46,11 +46,17 @@
     display: block;
     position: absolute;
     background-color: $primary-gradient-start;
-    color: $white;
     z-index: 223;
     padding: 10px 15px ;
     text-align: start;
     width: max-content;
+    
+
+    .menu-item{
+        a{
+    color: $white;
+        }
+    }
 }
 // Submenu end
 //Menu end
