@@ -8,3 +8,11 @@
 @use "fonts" as *;
 @use "transition" as *;
 @use "zindex" as *;
+
+
+.sub-menu{
+    display: none;
+}
+.sub-menu:hover{
+display: block;
+}
