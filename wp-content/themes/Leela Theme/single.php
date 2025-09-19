@@ -6,25 +6,22 @@
  */
 get_header();
 ?>
+<div class="content-area" style="display: flex; gap: 20px;">
+    
+    <!-- Main Blog Content -->
+    <main class="site-main" style="flex: 3;">
+        <?php
+        while ( have_posts() ) : the_post();
+            get_template_part( 'template-parts/content', get_post_format() );
+        endwhile;
+        ?>
+    </main>
 
-<div id="primary">
-    <main id="main" class="site-main mt-5 container" role="main">
-  <div class="row">
-      <div class="col-lg-8 col-12 px-lg-5">
-        <?php if( have_posts() ){     
-         while ( have_posts() ) : the_post();  
-         the_content();
-    endwhile;
-    }
-    ?>
-    </div>
-  
-<div class="col-lg-4 d-lg-block d-none">
-       <div class="sidebar-wrapper" style="flex: 1;">
+    <!-- Sidebar -->
+    <div class="sidebar-wrapper" style="flex: 1;">
         <?php get_sidebar(); ?>
-    </div>
     </div>
 
 </div>
-    </main>
-    </div>
+<?php get_footer('');
+?>

@@ -52,11 +52,6 @@ get_header();
     <p>No posts found.</p>
   <?php endif; ?>
     </div>
-    <div class="col-lg-4 d-lg-block d-none">
-       <div class="sidebar-wrapper" style="flex: 1;">
-        <?php get_sidebar(); ?>
-    </div>
-    </div>
   </div>
   
 </div>
