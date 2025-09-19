@@ -8,7 +8,8 @@ get_header();
 ?>
 <div class="content-area" style="display: flex; gap: 20px;">
     
-    <!-- Main Blog Content -->
+   <div class="container py-lg-5 py-2">
+     <!-- Main Blog Content -->
     <main class="site-main" style="flex: 3;">
        <?php if( have_posts() ){     
          while ( have_posts() ) : the_post();  
@@ -22,6 +23,7 @@ get_header();
     <div class="sidebar-wrapper" style="flex: 1;">
         <?php get_sidebar(); ?>
     </div>
+   </div>
 
 </div>
 <?php get_footer('');
