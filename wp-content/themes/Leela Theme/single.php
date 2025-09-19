@@ -6,9 +6,10 @@
  */
 get_header();
 ?>
-<div class="content-area" style="display: flex; gap: 20px;">
+
     
    <div class="container py-lg-5 py-2">
+    <div class="content-area" style="display: flex; gap: 20px;"></div>
      <!-- Main Blog Content -->
     <main class="site-main" style="flex: 3;">
        <?php if( have_posts() ){     
