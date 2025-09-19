@@ -26,7 +26,7 @@ $footer_images = [
                     <div class="row pt-4 text-center">
                         <div class="col-lg-4 col-md-6">
                             <h5>Leela Infotech, Inc.</h5>
-                            <p class="text-12">Designed by Atul Chambyal.</p>
+                            <p class="text-12">Designed by <a class="text-warning fw-semibold text-decoration-none link-light" href="https://portfolio.leelaholdings.in/">Atul Chambyal.</a></p>
                         </div>
                         <div class="col-lg-8 col-md-6">
                     <section class="row">
