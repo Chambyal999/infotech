@@ -53,7 +53,9 @@ get_header();
   <?php endif; ?>
     </div>
     <div class="col-lg-4 d-lg-block d-none">
-<?php get_sidebar(); ?>
+       <div class="sidebar-wrapper" style="flex: 1;">
+        <?php get_sidebar(); ?>
+    </div>
     </div>
   </div>
   
