@@ -9,7 +9,7 @@ get_header();
 
     
    <div class="container py-lg-5 py-2">
-    <div class="content-area" style="display: flex; gap: 20px;"></div>
+    <div class="content-area" style="display: flex; gap: 20px;">
      <!-- Main Blog Content -->
     <main class="site-main" style="flex: 3;">
        <?php if( have_posts() ){     
@@ -25,7 +25,6 @@ get_header();
         <?php get_sidebar(); ?>
     </div>
    </div>
-
 </div>
 <?php get_footer('');
 ?>
