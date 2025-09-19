@@ -21,7 +21,7 @@ get_header();
     </main>
 
     <!-- Sidebar -->
-    <div class="sidebar-wrapper" style="flex: 1;">
+    <div class="sidebar-wrapper d-lg-block d-none" style="flex: 1;">
         <?php get_sidebar(); ?>
     </div>
    </div>
