@@ -138,6 +138,23 @@ document.addEventListener('DOMContentLoaded', function() {
 add_action('wp_footer', 'qsm_custom_modal_leaderboard_script');
 // QSM QUiz script end
 
+
+
+
+// Register Sidebar
+function leela_infotech_sidebar() {
+    register_sidebar(array(
+        'name'          => __('Main Sidebar', 'leela-infotech'),
+        'id'            => 'main-sidebar',
+        'description'   => __('Widgets in this area will be shown on the sidebar.', 'leela-infotech'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
+}
+add_action('widgets_init', 'leela_infotech_sidebar');
+
 ?>
 
 
