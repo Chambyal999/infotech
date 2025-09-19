@@ -8,7 +8,9 @@ get_header();
 ?>
 
 <div class="container blog-page py-5">
-  <?php if ( have_posts() ) : ?>
+  <div class="row">
+    <div class="col-lg-8">
+<?php if ( have_posts() ) : ?>
     <div class="row g-4">
       <?php while ( have_posts() ) : the_post(); ?>
         <div class="col-md-4">
@@ -49,6 +51,12 @@ get_header();
   <?php else : ?>
     <p>No posts found.</p>
   <?php endif; ?>
+    </div>
+    <div class="col-lg-4 d-lg-block d-none">
+<?php get_sidebar(); ?>
+    </div>
+  </div>
+  
 </div>
 
 
