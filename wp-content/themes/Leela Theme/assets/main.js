@@ -1,4 +1,3 @@
-<script>
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".project-btn");
   const grid = document.querySelector(".services-grid");
@@ -78,4 +77,3 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial load
   renderProjects("complete");
 });
-</script>
