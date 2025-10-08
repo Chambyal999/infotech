@@ -57,8 +57,8 @@ $complete_projects = [
     [
         'icon' => '/wp-content/uploads/2025/10/programming.png',
         'title' => 'Leela Holdings',
-        'description' => 'The main digital hub showcasing our services, vision, and client focus.',
-        'button_text' => 'Discover Leela Infotech',
+        'description' => 'Corporate website for the parent company — elegant, professional, and strategic.',
+        'button_text' => 'Discover Leela Holdings',
         'button_link' => 'https://leelaholdings.in'
     ],
 ];
@@ -78,6 +78,20 @@ $recent_projects = [
         'button_text' => 'Discover Leela Wear',
         'button_link' => 'https://wear.leelaholdings.in'
     ],
+     [
+        'icon' => '/wp-content/uploads/2025/10/tshirt.png',
+        'title' => 'Leela Transport',
+        'description' => 'Innovative logistics platform under construction to simplify transport systems.',
+        'button_text' => 'Discover Leela Transport',
+        'button_link' => 'https://wear.leelaholdings.in'
+    ],
+     [
+        'icon' => '/wp-content/uploads/2025/10/tshirt.png',
+        'title' => 'Leela Test',
+        'description' => 'Internal testing project for UI/UX optimization and performance trials.',
+        'button_text' => 'Discover Leela Test',
+        'button_link' => 'https://wear.leelaholdings.in'
+    ],
 ];
 
 $upcoming_projects = [
@@ -95,11 +109,18 @@ $upcoming_projects = [
         'button_text' => 'Discover Gym Site',
         'button_link' => 'https://gym.leelaholdings.in'
     ],
+     [
+        'icon' => '/wp-content/uploads/2025/10/education.png',
+        'title' => 'Clinic Website',
+        'description' => 'Upcoming medical website focusing on trust, simplicity, and accessibility.',
+        'button_text' => 'Discover Clinic Site',
+        'button_link' => 'https://clinic.leelaholdings.in'
+    ],
 ];
 ?>
 
 <section id="leela-brands" class="bg-white py-5">
-  <div class="container text-center shadow p-lg-5">
+  <div class="container text-center shadow p-md-5">
 
     <h1 class="mb-2">Our Projects</h1>
     <p class="mb-5">Explore the journey of Leela Holdings — from completed work to upcoming innovations.</p>
