@@ -4,25 +4,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const allProjects = (window.projectData && projectData.allProjects) ? projectData.allProjects : {};
   const siteUrl = (window.projectData && projectData.siteUrl) ? projectData.siteUrl.replace(/\/$/, '') : '';
 
+  // Normalize URLs for images
   const normalizeUrl = (u) => {
     if (!u) return null;
-    if (/^(https?:)?\/\//i.test(u)) return u;
-    if (u.startsWith('/')) return siteUrl + u;
+    if (/^(https?:)?\/\//i.test(u)) return u; // external URLs
+    if (u.startsWith('/')) return siteUrl + u; // relative to root
     return siteUrl + '/' + u;
   };
 
-  const gatherImages = (p) => {
-    if (!p) return [];
-    if (Array.isArray(p.icons) && p.icons.length) return p.icons.map(normalizeUrl).filter(Boolean);
+  // Gather all images from the icons array
+  const gatherImages = (project) => {
+    if (!project) return [];
+    if (Array.isArray(project.icons) && project.icons.length) {
+      return project.icons.map(normalizeUrl).filter(Boolean);
+    }
     return [];
   };
 
+  // Render the projects
   const renderProjects = (type) => {
     if (!allProjects[type]) return;
     grid.innerHTML = "";
 
-    allProjects[type].forEach((p, idx) => {
+    allProjects[type].forEach((p) => {
       const images = gatherImages(p);
+
       const slidesHtml = (images.length ? images : ['']).map((img) => {
         const src = img || '';
         return `
@@ -61,8 +67,17 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       `;
     });
+
+    // Manually initialize the newly added Swiper containers
+    const swipers = grid.querySelectorAll('swiper-container');
+    swipers.forEach(swiperEl => {
+      if (typeof swiperEl.initialize === 'function') {
+        swiperEl.initialize();
+      }
+    });
   };
 
+  // Button click handler
   buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
