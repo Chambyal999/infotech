@@ -59,7 +59,7 @@ $upcoming_services = [
 <section class="services m-5">
     <div class="container">
         <div class="row p-5">
-            <main class="d-flex flex-column col-lg-6 col-md-12 gap-5">
+            <main class="d-flex flex-column col-lg-6 col-md-12 gap-3">
                 <div class="services-swiper">
                     <swiper-container class="mySwiper" space-between="30" centered-slides="true" slides-per-view="1"
                         autoplay-delay="2500" autoplay-disable-on-interaction="false"
@@ -67,7 +67,7 @@ $upcoming_services = [
 
                         <?php foreach ($services as $service): ?>
                             <swiper-slide>
-                                <div class="service-card h-100 w-100 bg-white border border-2 border-danger" data-tilt>
+                                <div class="service-card h-100 w-100 bg-white border border-2 border-dark" data-tilt>
                                     <div class="text-center mb-3 d-flex justify-content-center">
                                         <img src="<?php echo esc_url($service['icon']); ?>"
                                             alt="<?php echo esc_attr($service['title']); ?> Icon" class="services-logo"
@@ -89,7 +89,7 @@ $upcoming_services = [
 
                         <?php foreach ($upcoming_services as $upcoming_service): ?>
                             <swiper-slide>
-                                <div class="service-card h-100 w-100 bg-white border border-2 border-danger" data-tilt>
+                                <div class="service-card h-100 w-100 bg-white border border-2 border-dark" data-tilt>
                                     <div class="text-center mb-3 d-flex justify-content-center">
                                         <img src="<?php echo esc_url($upcoming_service['icon']); ?>"
                                             alt="<?php echo esc_attr($upcoming_service['title']); ?> Icon"
