@@ -10,43 +10,31 @@ $services = [
         'icon' => '/wp-content/uploads/2025/10/cropped-site-log-main-1.png',
         'title' => 'Leela Holdings',
         'description' => 'Corporate website for the parent company — elegant, professional, and strategic.',
-        'button_text' => 'Discover Leela Tests',
-        'button_link' => 'https://tests.leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/10/programming.png',
         'title' => 'Leela Infotech',
         'description' => 'The main digital hub showcasing our services, vision, and client focus.',
-        'button_text' => 'Discover Leela Infotech',
-        'button_link' => 'https://infotech.leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/10/retail.png',
         'title' => 'Leela Retail',
         'description' => 'Currently under development — bringing retail solutions to life online.',
-        'button_text' => 'Discover Leela Wear',
-        'button_link' => 'https://wear.leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/10/tshirt.png',
         'title' => 'Leela Wear',
         'description' => 'Fashion meets tech — an evolving e-commerce experience in progress.',
-        'button_text' => 'Discover Leela Transport',
-        'button_link' => 'https://transport.leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/10/transport.png',
         'title' => 'Leela Transport',
         'description' => 'Innovative logistics platform under construction to simplify transport systems.',
-        'button_text' => 'Discover Leela Retail',
-        'button_link' => 'https://retail.leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/10/retail.png',
         'title' => 'Leela Test',
         'description' => 'Internal testing project for UI/UX optimization and performance trials.',
-        'button_text' => 'Discover Leela Retail',
-        'button_link' => 'https://retail.leelaholdings.in'
     ]
 ];
 $upcoming_services = [
@@ -54,22 +42,16 @@ $upcoming_services = [
         'icon' => '/wp-content/uploads/2025/10/retail.png',
         'title' => 'Founder Portfolio',
         'description' => 'Personal portfolio showcasing the vision and achievements of Leela Holdings founder.',
-        'button_text' => 'Discover Leela Retail',
-        'button_link' => 'https://retail.leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/10/retail.png',
         'title' => 'Gym Website',
         'description' => 'Upcoming project — a sleek and energetic website for a fitness brand.',
-        'button_text' => 'Discover Leela Retail',
-        'button_link' => 'https://retail.leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/10/retail.png',
         'title' => 'Clinic Website',
         'description' => 'Upcoming medical website focusing on trust, simplicity, and accessibility.',
-        'button_text' => 'Discover Leela Retail',
-        'button_link' => 'https://retail.leelaholdings.in'
     ]
 ];
 
@@ -85,7 +67,7 @@ $upcoming_services = [
 
                         <?php foreach ($services as $service): ?>
                             <swiper-slide>
-                                <div class="service-card h-100 w-100 bg-white" data-tilt>
+                                <div class="service-card h-100 w-100 bg-white border border-2 border-danger" data-tilt>
                                     <div class="text-center mb-3 d-flex justify-content-center">
                                         <img src="<?php echo esc_url($service['icon']); ?>"
                                             alt="<?php echo esc_attr($service['title']); ?> Icon" class="services-logo"
@@ -93,10 +75,7 @@ $upcoming_services = [
                                     </div>
                                     <h2><?php echo esc_html($service['title']); ?></h2>
                                     <p><?php echo esc_html($service['description']); ?></p>
-                                    <a href="<?php echo esc_url($service['button_link']); ?>" class="btn btn-success"
-                                        target="_blank">
-                                        <?php echo esc_html($service['button_text']); ?>
-                                    </a>
+                                    <a href="#" class="btn btn-success" target="_blank">Visit our Projects</a>
                                 </div>
                             </swiper-slide>
                         <?php endforeach; ?>
@@ -110,7 +89,7 @@ $upcoming_services = [
 
                         <?php foreach ($upcoming_services as $upcoming_service): ?>
                             <swiper-slide>
-                                <div class="service-card h-100 w-100 bg-white" data-tilt>
+                                <div class="service-card h-100 w-100 bg-white border border-2 border-danger" data-tilt>
                                     <div class="text-center mb-3 d-flex justify-content-center">
                                         <img src="<?php echo esc_url($upcoming_service['icon']); ?>"
                                             alt="<?php echo esc_attr($upcoming_service['title']); ?> Icon"
@@ -118,10 +97,7 @@ $upcoming_services = [
                                     </div>
                                     <h2><?php echo esc_html($upcoming_service['title']); ?></h2>
                                     <p><?php echo esc_html($upcoming_service['description']); ?></p>
-                                    <a href="<?php echo esc_url($upcoming_service['button_link']); ?>"
-                                        class="btn btn-success" target="_blank">
-                                        <?php echo esc_html($upcoming_service['button_text']); ?>
-                                    </a>
+                                   <a href="#" class="btn btn-success" target="_blank">Visit our Upcoming Projects</a>
                                 </div>
                             </swiper-slide>
                         <?php endforeach; ?>
@@ -151,7 +127,7 @@ $upcoming_services = [
                     </p>
                 </div>
                 <div class="d-flex">
-                    <a class="d-flex justify-content-center btn btn-success" target="_blank" href="/projects/">View More
+                    <a class="w-100" target="_blank" href="/projects/">View More
                         Projects</a>
                 </div>
             </main>
