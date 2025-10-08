@@ -106,19 +106,11 @@ if (is_front_page()) {
       'button_link' => 'https://tests.leelaholdings.in'
     ]
   ];
-
-
-  if (is_page(41)) {
-    $heading = "Brands Under Leela Holdings";
-    $paragraph = "From web development to fashion, explore our diverse ventures.";
-  } else {
-    $heading = "Services We Provide";
-    $paragraph = "Explore the range of solutions we offer to help your business grow and succeed.";
-  }
   ?>
-<section class="projects-container d-flex justify-content-between align-items-center">
-<div><a class="btn btn-primary" href="#">Recent Projects</a></div>
-<div><a class="btn btn-primary" href="#">Upcoming Projects</a></div>
+<section class="projects-container d-flex justify-content-evenly align-items-center gap-3">
+<div class="w-100"><a class="btn btn-primary w-100 rounded-0" href="#">Complete Projects</a></div>
+<div class="w-100"><a class="btn btn-primary w-100 rounded-0" href="#">Recent Projects</a></div>
+<div class="w-100"><a class="btn btn-primary w-100 rounded-0" href="#">Upcoming Projects</a></div>
 </div>
 
 
