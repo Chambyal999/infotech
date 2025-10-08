@@ -46,7 +46,7 @@ if (is_front_page()) {
 
   <?php
   // Array of services
-  $services = [
+  $complete_projects=[
     [
       'icon' => '/wp-content/uploads/2025/09/programming.png',
       'title' => 'Leela Infotech',
@@ -54,6 +54,15 @@ if (is_front_page()) {
       'button_text' => 'Discover Leela Infotech',
       'button_link' => 'https://infotech.leelaholdings.in'
     ],
+    [
+      'icon' => '/wp-content/uploads/2025/09/programming.png',
+      'title' => 'Leela Holdings',
+      'description' => 'The main digital hub showcasing our services, vision, and client focus.',
+      'button_text' => 'Discover Leela Infotech',
+      'button_link' => 'https://leelaholdings.in'
+    ],
+  ];
+  $recent_projects = [
     [
       'icon' => '/wp-content/uploads/2025/09/retail.png',
       'title' => 'Leela Retail',
@@ -83,7 +92,7 @@ if (is_front_page()) {
       'button_link' => 'https://tests.leelaholdings.in'
     ]
   ];
-  $Upcoming_services = [
+  $Upcoming_projects = [
     [
       'icon' => '/wp-content/uploads/2025/09/education.png',
       'title' => 'Founder Portfolio',
@@ -122,19 +131,19 @@ if (is_front_page()) {
 
       <div class="row g-4 justify-content-center services-grid">
 
-        <?php foreach ($services as $index => $service): ?>
+        <?php foreach ($recent_projects as $index => $recent_project): ?>
           <div
             class="col-lg-4 col-md-6 d-flex justify-content-center <?php echo ($index > 0) ? 'd-none d-md-block' : ''; ?>">
             <div class="service-card h-100 w-100" data-tilt>
               <div class="text-center mb-3">
-                <img src="<?php echo esc_url(home_url($service['icon'])); ?>"
-                  alt="<?php echo esc_attr($service['title']); ?> Icon" class="services-logo"
+                <img src="<?php echo esc_url(home_url($recent_project['icon'])); ?>"
+                  alt="<?php echo esc_attr($recent_project['title']); ?> Icon" class="services-logo"
                   style="width:80px; height:80px; object-fit:cover;">
               </div>
-              <h2><?php echo esc_html($service['title']); ?></h2>
-              <p><?php echo esc_html($service['description']); ?></p>
-              <a href="<?php echo esc_url($service['button_link']); ?>" class="btn btn-success" target="_blank">
-                <?php echo esc_html($service['button_text']); ?>
+              <h2><?php echo esc_html($recent_project['title']); ?></h2>
+              <p><?php echo esc_html($recent_project['description']); ?></p>
+              <a href="<?php echo esc_url($recent_project['button_link']); ?>" class="btn btn-success" target="_blank">
+                <?php echo esc_html($recent_project['button_text']); ?>
               </a>
             </div>
           </div>
