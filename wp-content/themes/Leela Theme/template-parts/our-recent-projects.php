@@ -74,10 +74,10 @@ $upcoming_services = [
 ];
 
 ?>
-<section class="services">
+<section class="services m-5">
     <div class="container">
         <div class="row p-5">
-            <main class="d-flex flex-column col-lg-6 col-md-12">
+            <main class="d-flex flex-column col-lg-6 col-md-12 gap-5">
                 <div class="services-swiper">
                     <swiper-container class="mySwiper" space-between="30" centered-slides="true" slides-per-view="1"
                         autoplay-delay="2500" autoplay-disable-on-interaction="false"
