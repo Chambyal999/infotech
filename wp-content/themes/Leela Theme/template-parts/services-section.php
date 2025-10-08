@@ -46,123 +46,86 @@ if (is_front_page()) {
 
   <?php
   // Array of services
-  $complete_projects = [
+$complete_projects = [
     [
-      'icon' => '/wp-content/uploads/2025/09/programming.png',
-      'title' => 'Leela Infotech',
-      'description' => 'The main digital hub showcasing our services, vision, and client focus.',
-      'button_text' => 'Discover Leela Infotech',
-      'button_link' => 'https://infotech.leelaholdings.in'
+        'icon' => '/wp-content/uploads/2025/09/programming.png',
+        'title' => 'Leela Infotech',
+        'description' => 'The main digital hub showcasing our services, vision, and client focus.',
+        'button_text' => 'Discover Leela Infotech',
+        'button_link' => 'https://infotech.leelaholdings.in'
     ],
     [
-      'icon' => '/wp-content/uploads/2025/09/programming.png',
-      'title' => 'Leela Holdings',
-      'description' => 'The main digital hub showcasing our services, vision, and client focus.',
-      'button_text' => 'Discover Leela Infotech',
-      'button_link' => 'https://leelaholdings.in'
+        'icon' => '/wp-content/uploads/2025/09/programming.png',
+        'title' => 'Leela Holdings',
+        'description' => 'The main digital hub showcasing our services, vision, and client focus.',
+        'button_text' => 'Discover Leela Infotech',
+        'button_link' => 'https://leelaholdings.in'
     ],
-  ];
-  $recent_projects = [
-    [
-      'icon' => '/wp-content/uploads/2025/09/retail.png',
-      'title' => 'Leela Retail',
-      'description' => 'Currently under development — bringing retail solutions to life online.',
-      'button_text' => 'Discover Leela Retail',
-      'button_link' => 'https://retail.leelaholdings.in'
-    ],
-    [
-      'icon' => '/wp-content/uploads/2025/09/tshirt.png',
-      'title' => 'Leela Wear',
-      'description' => 'Fashion meets tech — an evolving e-commerce experience in progress.',
-      'button_text' => 'Discover Leela Wear',
-      'button_link' => 'https://wear.leelaholdings.in'
-    ],
-    [
-      'icon' => '/wp-content/uploads/2025/09/transport.png',
-      'title' => 'Leela Transport',
-      'description' => 'Innovative logistics platform under construction to simplify transport systems.',
-      'button_text' => 'Discover Leela Transport',
-      'button_link' => 'https://transport.leelaholdings.in'
-    ],
-    [
-      'icon' => '/wp-content/uploads/2025/09/education.png',
-      'title' => 'Leela Tests',
-      'description' => 'Internal testing project for UI/UX optimization and performance trials.',
-      'button_text' => 'Discover Leela Tests',
-      'button_link' => 'https://tests.leelaholdings.in'
-    ]
-  ];
-  $Upcoming_projects = [
-    [
-      'icon' => '/wp-content/uploads/2025/09/education.png',
-      'title' => 'Founder Portfolio',
-      'description' => 'Personal portfolio showcasing the vision and achievements of Leela Holdings founder.',
-      'button_text' => 'Discover Leela Tests',
-      'button_link' => 'https://tests.leelaholdings.in'
-    ],
-    [
-      'icon' => '/wp-content/uploads/2025/09/education.png',
-      'title' => 'Gym Website',
-      'description' => 'Upcoming project — a sleek and energetic website for a fitness brand.',
-      'button_text' => 'Discover Leela Tests',
-      'button_link' => 'https://tests.leelaholdings.in'
-    ],
-    [
-      'icon' => '/wp-content/uploads/2025/09/education.png',
-      'title' => 'Clinic Website',
-      'description' => 'Upcoming medical website focusing on trust, simplicity, and accessibility.',
-      'button_text' => 'Discover Leela Tests',
-      'button_link' => 'https://tests.leelaholdings.in'
-    ]
-  ];
+];
 
-  $heading = 'Our Projects';
-  $paragraph = 'Explore the journey of Leela Holdings — from completed work to upcoming innovations.';
-  ?>
-  <section class="projects-container d-flex justify-content-evenly align-items-center gap-3">
-    <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="complete">Complete Projects</button>
-    <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="recent">Recent Projects</button>
-    <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="upcoming">Upcoming Projects</button>
-  </section>
-  <script>
-  const allProjects = {
-    complete: <?php echo json_encode($complete_projects); ?>,
-    recent: <?php echo json_encode($recent_projects); ?>,
-    upcoming: <?php echo json_encode($Upcoming_projects); ?>,
+$recent_projects = [
+    [
+        'icon' => '/wp-content/uploads/2025/09/retail.png',
+        'title' => 'Leela Retail',
+        'description' => 'Currently under development — bringing retail solutions to life online.',
+        'button_text' => 'Discover Leela Retail',
+        'button_link' => 'https://retail.leelaholdings.in'
+    ],
+    [
+        'icon' => '/wp-content/uploads/2025/09/tshirt.png',
+        'title' => 'Leela Wear',
+        'description' => 'Fashion meets tech — an evolving e-commerce experience in progress.',
+        'button_text' => 'Discover Leela Wear',
+        'button_link' => 'https://wear.leelaholdings.in'
+    ],
+];
+
+$upcoming_projects = [
+    [
+        'icon' => '/wp-content/uploads/2025/09/education.png',
+        'title' => 'Founder Portfolio',
+        'description' => 'Personal portfolio showcasing the vision and achievements of Leela Holdings founder.',
+        'button_text' => 'Discover Portfolio',
+        'button_link' => 'https://portfolio.leelaholdings.in'
+    ],
+    [
+        'icon' => '/wp-content/uploads/2025/09/education.png',
+        'title' => 'Gym Website',
+        'description' => 'Upcoming project — a sleek and energetic website for a fitness brand.',
+        'button_text' => 'Discover Gym Site',
+        'button_link' => 'https://gym.leelaholdings.in'
+    ],
+];
+?>
+
+<section id="leela-brands" class="bg-white py-5">
+  <div class="container text-center shadow p-5">
+
+    <h1 class="mb-2">Our Projects</h1>
+    <p class="mb-5">Explore the journey of Leela Holdings — from completed work to upcoming innovations.</p>
+
+    <!-- Buttons -->
+    <div class="projects-container d-flex justify-content-evenly align-items-center gap-3 mb-5">
+      <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="complete">Complete Projects</button>
+      <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="recent">Recent Projects</button>
+      <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="upcoming">Upcoming Projects</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="row g-4 justify-content-center services-grid"></div>
+
+  </div>
+</section>
+
+<script>
+  const projectData = {
+    siteUrl: "<?php echo esc_url(home_url()); ?>",
+    allProjects: {
+      complete: <?php echo json_encode($complete_projects); ?>,
+      recent: <?php echo json_encode($recent_projects); ?>,
+      upcoming: <?php echo json_encode($upcoming_projects); ?>,
+    }
   };
 </script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 
-
-
-
-  <main class="bg-white py-5" id="leela-brands">
-    <div class="container text-center shadow p-5">
-
-      <h1 class="mb-2"><?php echo $heading; ?></h1>
-      <p class="mb-5"><?php echo $paragraph; ?></p>
-
-      <div class="row g-4 justify-content-center services-grid">
-
-        <?php foreach ($recent_projects as $index => $recent_project): ?>
-          <div
-            class="col-lg-4 col-md-6 d-flex justify-content-center <?php echo ($index > 0) ? 'd-none d-md-block' : ''; ?>">
-            <div class="service-card h-100 w-100" data-tilt>
-              <div class="text-center mb-3">
-                <img src="<?php echo esc_url(home_url($recent_project['icon'])); ?>"
-                  alt="<?php echo esc_attr($recent_project['title']); ?> Icon" class="services-logo"
-                  style="width:80px; height:80px; object-fit:cover;">
-              </div>
-              <h2><?php echo esc_html($recent_project['title']); ?></h2>
-              <p><?php echo esc_html($recent_project['description']); ?></p>
-              <a href="<?php echo esc_url($recent_project['button_link']); ?>" class="btn btn-success" target="_blank">
-                <?php echo esc_html($recent_project['button_text']); ?>
-              </a>
-            </div>
-          </div>
-        <?php endforeach; ?>
-
-      </div>
-    </div>
-  </main>
 <?php } ?>
