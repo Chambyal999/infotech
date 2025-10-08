@@ -8,14 +8,20 @@ if (is_page(41)) {
   // Array of services
 $complete_projects = [
     [
-        'icon' => '/wp-content/uploads/2025/10/programming.png',
+        'icons' => [
+            '/wp-content/uploads/2025/10/programming.png',
+            '/wp-content/uploads/2025/10/programming.png'
+        ],
         'title' => 'Leela Infotech',
         'description' => 'The main digital hub showcasing our services, vision, and client focus.',
         'button_text' => 'Discover Leela Infotech',
         'button_link' => 'https://infotech.leelaholdings.in'
     ],
     [
-        'icon' => '/wp-content/uploads/2025/10/programming.png',
+       'icons' => [
+            '/wp-content/uploads/2025/10/programming.png',
+            '/wp-content/uploads/2025/10/programming.png'
+        ],
         'title' => 'Leela Holdings',
         'description' => 'Corporate website for the parent company — elegant, professional, and strategic.',
         'button_text' => 'Discover Leela Holdings',
@@ -25,28 +31,40 @@ $complete_projects = [
 
 $recent_projects = [
     [
-        'icon' => '/wp-content/uploads/2025/10/retail.png',
+        'icons' => [
+          '/wp-content/uploads/2025/10/retail.png',
+          '/wp-content/uploads/2025/10/retail.png',
+        ],
         'title' => 'Leela Retail',
         'description' => 'Currently under development — bringing retail solutions to life online.',
         'button_text' => 'Discover Leela Retail',
         'button_link' => 'https://retail.leelaholdings.in'
     ],
     [
-        'icon' => '/wp-content/uploads/2025/10/tshirt.png',
+        'icons' => [
+          '/wp-content/uploads/2025/10/tshirt.png',
+          '/wp-content/uploads/2025/10/tshirt.png',
+        ],
         'title' => 'Leela Wear',
         'description' => 'Fashion meets tech — an evolving e-commerce experience in progress.',
         'button_text' => 'Discover Leela Wear',
         'button_link' => 'https://wear.leelaholdings.in'
     ],
      [
-        'icon' => '/wp-content/uploads/2025/10/tshirt.png',
+        'icons' => [
+          '/wp-content/uploads/2025/10/tshirt.png',
+          '/wp-content/uploads/2025/10/tshirt.png',
+        ],
         'title' => 'Leela Transport',
         'description' => 'Innovative logistics platform under construction to simplify transport systems.',
         'button_text' => 'Discover Leela Transport',
         'button_link' => 'https://wear.leelaholdings.in'
     ],
      [
-        'icon' => '/wp-content/uploads/2025/10/tshirt.png',
+        'icons' => [
+          '/wp-content/uploads/2025/10/tshirt.png',
+          '/wp-content/uploads/2025/10/tshirt.png',
+        ],
         'title' => 'Leela Test',
         'description' => 'Internal testing project for UI/UX optimization and performance trials.',
         'button_text' => 'Discover Leela Test',
@@ -56,21 +74,30 @@ $recent_projects = [
 
 $upcoming_projects = [
     [
-        'icon' => '/wp-content/uploads/2025/10/education.png',
+        'icons' => [
+          '/wp-content/uploads/2025/10/education.png',
+          '/wp-content/uploads/2025/10/education.png',
+        ],
         'title' => 'Founder Portfolio',
         'description' => 'Personal portfolio showcasing the vision and achievements of Leela Holdings founder.',
         'button_text' => 'Discover Portfolio',
         'button_link' => 'https://portfolio.leelaholdings.in'
     ],
     [
-        'icon' => '/wp-content/uploads/2025/10/education.png',
+        'icons' => [
+          '/wp-content/uploads/2025/10/education.png',
+          '/wp-content/uploads/2025/10/education.png',
+        ],
         'title' => 'Gym Website',
         'description' => 'Upcoming project — a sleek and energetic website for a fitness brand.',
         'button_text' => 'Discover Gym Site',
         'button_link' => 'https://gym.leelaholdings.in'
     ],
      [
-        'icon' => '/wp-content/uploads/2025/10/education.png',
+        'icons' => [
+          '/wp-content/uploads/2025/10/education.png',
+          '/wp-content/uploads/2025/10/education.png',
+        ],
         'title' => 'Clinic Website',
         'description' => 'Upcoming medical website focusing on trust, simplicity, and accessibility.',
         'button_text' => 'Discover Clinic Site',
