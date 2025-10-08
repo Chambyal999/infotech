@@ -2,11 +2,28 @@
 /**
  * Theme Functions.
  * 
- * @package leelaHoldings
+ * @package  infotech-leelaHoldings
  */
 
+// title tag
+function leela_theme_setup() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'leela_theme_setup' );
+
+// Shortcode for clickable phone number
+add_shortcode('site_phone_number', function () {
+    return '<a href="tel:+917807982499">+91-78079-82499</a>';
+});
+
+// Shortcode for clickable site URL
+add_shortcode('site_url', function () {
+    $url = get_site_url();
+    return '<a href="' . $url . '">' . $url . '</a>';
+});
 
 
+// scripts and styles enqueue start
 function leelaHoldings_enqueue_scripts() {
     // Register styles 
     wp_register_style( 'style-css', get_stylesheet_uri(), [], filemtime(get_template_directory() . '/style.css'), 'all' );
@@ -27,6 +44,7 @@ function leelaHoldings_enqueue_scripts() {
     wp_enqueue_script('cards-js');
 }
 add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
+
 // Enqueue SCSS compiled main.css
 function leela_theme_enqueue_styles() {
     wp_enqueue_style(
@@ -37,47 +55,9 @@ function leela_theme_enqueue_styles() {
     );
 }
 add_action('wp_enqueue_scripts', 'leela_theme_enqueue_styles');
-
 // Sass end
 
-
-// Main Menus
-function custom_theme_main_menu(){
-    register_nav_menus(
-        array(
-            'main-menu'=> __('Main Menu'),
-            'footer-menu-1'=> __('Footer Menu 1'),
-            'footer-menu-2'=>__('Footer Menu 2'),
-        )
-    );
-}
-add_action('init', 'custom_theme_main_menu');
-
-
-
-// Hide admin bar only for subscribers
-function hide_admin_bar_for_subscribers() {
-    if (current_user_can('subscriber')) {
-        show_admin_bar(false);
-    }
-}
-add_action('after_setup_theme', 'hide_admin_bar_for_subscribers');
-
-
-
-// Shortcode for clickable phone number
-add_shortcode('site_phone_number', function () {
-    return '<a href="tel:+917807982499">+91-78079-82499</a>';
-});
-
-// Shortcode for clickable site URL
-add_shortcode('site_url', function () {
-    $url = get_site_url();
-    return '<a href="' . $url . '">' . $url . '</a>';
-});
-
-
-
+// swiper start
 function leela_enqueue_swiper() {
     // Swiper CSS
     wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', [], null);
@@ -94,52 +74,21 @@ function leela_enqueue_swiper() {
     ");
 }
 add_action('wp_enqueue_scripts', 'leela_enqueue_swiper');
+// swiper end
 
+// scripts and styles enqueue start
 
-
-
-
-// QSM QUiz script start
-// Add this to functions.php or via Code Snippets plugin
-function qsm_custom_modal_leaderboard_script() {
-?>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Modal functionality
-  const btn = document.getElementById('showAnswersBtn');
-  const modal = document.getElementById('answersModal');
-  const close = document.getElementById('closeModal');
-
-  btn.addEventListener('click', () => modal.style.display = 'block');
-  close.addEventListener('click', () => modal.style.display = 'none');
-  window.addEventListener('click', (e) => { if(e.target == modal) modal.style.display = 'none'; });
-
-  // Free Leaderboard (sample data)
-  const leaderboardData = [
-    {name: 'Atul', score: 18},
-    {name: 'Shivani', score: 16},
-    {name: 'Rahul', score: 14},
-    {name: 'Neha', score: 12},
-  ];
-
-  const tbody = document.getElementById('leaderboardBody');
-  leaderboardData.sort((a,b) => b.score - a.score); // descending
-  leaderboardData.forEach((user, index) => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `<td style="padding:10px; border:1px solid #3b7d3b;">${index+1}</td>
-                    <td style="padding:10px; border:1px solid #3b7d3b;">${user.name}</td>
-                    <td style="padding:10px; border:1px solid #3b7d3b;">${user.score}</td>`;
-    tbody.appendChild(tr);
-  });
-});
-</script>
-<?php
+// Main Menus
+function custom_theme_main_menu(){
+    register_nav_menus(
+        array(
+            'main-menu'=> __('Main Menu'),
+            'footer-menu-1'=> __('Footer Menu 1'),
+            'footer-menu-2'=>__('Footer Menu 2'),
+        )
+    );
 }
-add_action('wp_footer', 'qsm_custom_modal_leaderboard_script');
-// QSM QUiz script end
-
-
-
+add_action('init', 'custom_theme_main_menu');
 
 // Register Sidebar
 function leela_infotech_sidebar() {
@@ -154,6 +103,8 @@ function leela_infotech_sidebar() {
     ));
 }
 add_action('widgets_init', 'leela_infotech_sidebar');
+
+// Sidebar end
 
 ?>
 
