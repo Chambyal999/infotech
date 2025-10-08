@@ -74,10 +74,61 @@ $upcoming_services = [
 ];
 
 ?>
-<section class="services-container">
+<section class="services">
     <div class="container">
-        <div class="row py-5 text-white">
-            <div class="about-section col-lg-6 col-md-12">
+        <div class="row p-5">
+            <main class="d-flex flex-column col-lg-6 col-md-12">
+                <div class="services-swiper">
+                    <swiper-container class="mySwiper" space-between="30" centered-slides="true" slides-per-view="1"
+                        autoplay-delay="2500" autoplay-disable-on-interaction="false"
+                        autoplay-pause-on-mouse-enter="true">
+
+                        <?php foreach ($services as $service): ?>
+                            <swiper-slide>
+                                <div class="service-card h-100 w-100 bg-white" data-tilt>
+                                    <div class="text-center mb-3 d-flex justify-content-center">
+                                        <img src="<?php echo esc_url($service['icon']); ?>"
+                                            alt="<?php echo esc_attr($service['title']); ?> Icon" class="services-logo"
+                                            style="width:80px; height:80px; object-fit:cover;">
+                                    </div>
+                                    <h2><?php echo esc_html($service['title']); ?></h2>
+                                    <p><?php echo esc_html($service['description']); ?></p>
+                                    <a href="<?php echo esc_url($service['button_link']); ?>" class="btn btn-success"
+                                        target="_blank">
+                                        <?php echo esc_html($service['button_text']); ?>
+                                    </a>
+                                </div>
+                            </swiper-slide>
+                        <?php endforeach; ?>
+                    </swiper-container>
+                </div>
+
+                <div class="upcoming-services-swiper">
+                    <swiper-container class="mySwiper" space-between="30" centered-slides="true" slides-per-view="1"
+                        autoplay-delay="2500" autoplay-disable-on-interaction="false"
+                        autoplay-pause-on-mouse-enter="true">
+
+                        <?php foreach ($upcoming_services as $upcoming_service): ?>
+                            <swiper-slide>
+                                <div class="service-card h-100 w-100 bg-white" data-tilt>
+                                    <div class="text-center mb-3 d-flex justify-content-center">
+                                        <img src="<?php echo esc_url($upcoming_service['icon']); ?>"
+                                            alt="<?php echo esc_attr($upcoming_service['title']); ?> Icon"
+                                            class="services-logo" style="width:80px; height:80px; object-fit:cover;">
+                                    </div>
+                                    <h2><?php echo esc_html($upcoming_service['title']); ?></h2>
+                                    <p><?php echo esc_html($upcoming_service['description']); ?></p>
+                                    <a href="<?php echo esc_url($upcoming_service['button_link']); ?>"
+                                        class="btn btn-success" target="_blank">
+                                        <?php echo esc_html($upcoming_service['button_text']); ?>
+                                    </a>
+                                </div>
+                            </swiper-slide>
+                        <?php endforeach; ?>
+                    </swiper-container>
+                </div>
+            </main>
+            <main class="about-section col-lg-6 col-md-12">
                 <div class="p-3">
                     <h2 class="section-title mb-3 fw-bold">Our Recent Projects</h2>
                     <p class="lead">
@@ -99,56 +150,11 @@ $upcoming_services = [
                         products designed to make businesses smarter, faster, and more connected.
                     </p>
                 </div>
-            </div>
-<main class="d-flex flex-column">
-            <div class="services-swiper col-lg-6 col-md-12">
-                <swiper-container class="mySwiper" space-between="30" centered-slides="true" slides-per-view="1"
-                    autoplay-delay="2500" autoplay-disable-on-interaction="false" autoplay-pause-on-mouse-enter="true">
-
-                    <?php foreach ($services as $service): ?>
-                        <swiper-slide>
-                            <div class="service-card h-100 w-100 bg-white" data-tilt>
-                                <div class="text-center mb-3 d-flex justify-content-center">
-                                    <img src="<?php echo esc_url($service['icon']); ?>"
-                                        alt="<?php echo esc_attr($service['title']); ?> Icon" class="services-logo"
-                                        style="width:80px; height:80px; object-fit:cover;">
-                                </div>
-                                <h2><?php echo esc_html($service['title']); ?></h2>
-                                <p><?php echo esc_html($service['description']); ?></p>
-                                <a href="<?php echo esc_url($service['button_link']); ?>" class="btn btn-success"
-                                    target="_blank">
-                                    <?php echo esc_html($service['button_text']); ?>
-                                </a>
-                            </div>
-                        </swiper-slide>
-                    <?php endforeach; ?>
-                </swiper-container>
-            </div>
-
-            <div class="upcoming-services-swiper col-lg-6 col-md-12">
-                <swiper-container class="mySwiper" space-between="30" centered-slides="true" slides-per-view="1"
-                    autoplay-delay="2500" autoplay-disable-on-interaction="false" autoplay-pause-on-mouse-enter="true">
-
-                    <?php foreach ($upcoming_services as $upcoming_service): ?>
-                        <swiper-slide>
-                            <div class="service-card h-100 w-100 bg-white" data-tilt>
-                                <div class="text-center mb-3 d-flex justify-content-center">
-                                    <img src="<?php echo esc_url($upcoming_service['icon']); ?>"
-                                        alt="<?php echo esc_attr($upcoming_service['title']); ?> Icon" class="services-logo"
-                                        style="width:80px; height:80px; object-fit:cover;">
-                                </div>
-                                <h2><?php echo esc_html($upcoming_service['title']); ?></h2>
-                                <p><?php echo esc_html($upcoming_service['description']); ?></p>
-                                <a href="<?php echo esc_url($upcoming_service['button_link']); ?>" class="btn btn-success"
-                                    target="_blank">
-                                    <?php echo esc_html($upcoming_service['button_text']); ?>
-                                </a>
-                            </div>
-                        </swiper-slide>
-                    <?php endforeach; ?>
-                </swiper-container>
-            </div>
-</main>
+                <div class="d-flex">
+                    <a class="d-flex justify-content-center btn btn-success" target="_blank" href="/projects/">View More
+                        Projects</a>
+                </div>
+            </main>
         </div>
     </div>
 </section>
