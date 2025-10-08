@@ -99,13 +99,13 @@ $upcoming_projects = [
 ?>
 
 <section id="leela-brands" class="bg-white py-5">
-  <div class="container text-center shadow p-5">
+  <div class="container text-center shadow p-lg-5">
 
     <h1 class="mb-2">Our Projects</h1>
     <p class="mb-5">Explore the journey of Leela Holdings — from completed work to upcoming innovations.</p>
 
     <!-- Buttons -->
-    <div class="projects-container d-flex justify-content-evenly align-items-center gap-3 mb-5">
+    <div class="projects-container d-md-flex justify-content-evenly align-items-center gap-3 mb-5">
       <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="complete">Complete Projects</button>
       <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="recent">Recent Projects</button>
       <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="upcoming">Upcoming Projects</button>
