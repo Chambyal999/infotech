@@ -4,7 +4,7 @@
  * @package Leela infotech
  */
 
-if (is_page('41')) {
+if (is_page(41)) {
   // Array of services
 $complete_projects = [
     [
