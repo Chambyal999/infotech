@@ -48,14 +48,14 @@ if (is_front_page()) {
   // Array of services
 $complete_projects = [
     [
-        'icon' => '/wp-content/uploads/2025/09/programming.png',
+        'icon' => '/wp-content/uploads/2025/10/programming.png',
         'title' => 'Leela Infotech',
         'description' => 'The main digital hub showcasing our services, vision, and client focus.',
         'button_text' => 'Discover Leela Infotech',
         'button_link' => 'https://infotech.leelaholdings.in'
     ],
     [
-        'icon' => '/wp-content/uploads/2025/09/programming.png',
+        'icon' => '/wp-content/uploads/2025/10/programming.png',
         'title' => 'Leela Holdings',
         'description' => 'The main digital hub showcasing our services, vision, and client focus.',
         'button_text' => 'Discover Leela Infotech',
@@ -65,14 +65,14 @@ $complete_projects = [
 
 $recent_projects = [
     [
-        'icon' => '/wp-content/uploads/2025/09/retail.png',
+        'icon' => '/wp-content/uploads/2025/10/retail.png',
         'title' => 'Leela Retail',
         'description' => 'Currently under development — bringing retail solutions to life online.',
         'button_text' => 'Discover Leela Retail',
         'button_link' => 'https://retail.leelaholdings.in'
     ],
     [
-        'icon' => '/wp-content/uploads/2025/09/tshirt.png',
+        'icon' => '/wp-content/uploads/2025/10/tshirt.png',
         'title' => 'Leela Wear',
         'description' => 'Fashion meets tech — an evolving e-commerce experience in progress.',
         'button_text' => 'Discover Leela Wear',
@@ -82,14 +82,14 @@ $recent_projects = [
 
 $upcoming_projects = [
     [
-        'icon' => '/wp-content/uploads/2025/09/education.png',
+        'icon' => '/wp-content/uploads/2025/10/education.png',
         'title' => 'Founder Portfolio',
         'description' => 'Personal portfolio showcasing the vision and achievements of Leela Holdings founder.',
         'button_text' => 'Discover Portfolio',
         'button_link' => 'https://portfolio.leelaholdings.in'
     ],
     [
-        'icon' => '/wp-content/uploads/2025/09/education.png',
+        'icon' => '/wp-content/uploads/2025/10/education.png',
         'title' => 'Gym Website',
         'description' => 'Upcoming project — a sleek and energetic website for a fitness brand.',
         'button_text' => 'Discover Gym Site',
