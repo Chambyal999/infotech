@@ -41,28 +41,30 @@ $services = [
         'button_text' => 'Discover Leela Retail',
         'button_link' => 'https://retail.leelaholdings.in'
     ],
-       [
+    [
         'icon' => '/wp-content/uploads/2025/10/retail.png',
         'title' => 'Leela Test',
         'description' => 'Internal testing project for UI/UX optimization and performance trials.',
         'button_text' => 'Discover Leela Retail',
         'button_link' => 'https://retail.leelaholdings.in'
-       ],
-           [
+    ]
+];
+$upcoming_services = [
+    [
         'icon' => '/wp-content/uploads/2025/10/retail.png',
         'title' => 'Founder Portfolio',
         'description' => 'Personal portfolio showcasing the vision and achievements of Leela Holdings founder.',
         'button_text' => 'Discover Leela Retail',
         'button_link' => 'https://retail.leelaholdings.in'
     ],
-       [
+    [
         'icon' => '/wp-content/uploads/2025/10/retail.png',
         'title' => 'Gym Website',
         'description' => 'Upcoming project — a sleek and energetic website for a fitness brand.',
         'button_text' => 'Discover Leela Retail',
         'button_link' => 'https://retail.leelaholdings.in'
-       ],
-           [
+    ],
+    [
         'icon' => '/wp-content/uploads/2025/10/retail.png',
         'title' => 'Clinic Website',
         'description' => 'Upcoming medical website focusing on trust, simplicity, and accessibility.',
@@ -73,57 +75,80 @@ $services = [
 
 ?>
 <section class="services-container">
-<div class="container">
-<div class="row py-5 text-white">
-  <div class="about-section col-lg-6 col-md-12">
-    <div class="p-3">
-      <h2 class="section-title mb-3 fw-bold">Our Recent Projects</h2>
-      <p class="lead">
-        Explore some of our recent projects where creativity meets performance. 
-      Each one reflects our dedication to design and development excellence.
-      </p>
-    </div>
-    <div class="p-3">
-      <h2 class="section-title mb-3 fw-bold">Building the Future, One Project at a Time</h2>
-      <p class="lead">
-        At <strong>Leela Infotech</strong>, innovation never stops. Our team is currently developing a range of new digital experiences — from modern e-commerce platforms like <strong>Leela Retail</strong> and <strong>Leela Wear</strong>, to powerful service solutions such as <strong>Leela Transport</strong> and <strong>Leela Test</strong>. We’re also crafting new ventures like a <strong>Gym Website</strong> and a <strong>Clinic Website</strong> that redefine how users connect, engage, and grow online.
-<br><br>
-Stay tuned as we continue expanding our digital ecosystem and delivering next-generation products designed to make businesses smarter, faster, and more connected.
-      </p>
-    </div>
-  </div>
-
-   <div class="about-swiper col-lg-6 col-md-12">
-    <swiper-container class="mySwiper"
-        space-between="30"
-        centered-slides="true" 
-        slides-per-view="1"
-        autoplay-delay="2500" 
-        autoplay-disable-on-interaction="false"
-        autoplay-pause-on-mouse-enter="true">
-        
-        <?php foreach ($services as $service): ?>
-          <swiper-slide>
-            <div class="service-card h-100 w-100 bg-white" data-tilt>
-              <div class="text-center mb-3 d-flex justify-content-center">
-                <img src="<?php echo esc_url($service['icon']); ?>" 
-                     alt="<?php echo esc_attr($service['title']); ?> Icon" 
-                     class="services-logo" 
-                     style="width:80px; height:80px; object-fit:cover;">
-              </div>
-              <h2><?php echo esc_html($service['title']); ?></h2>
-              <p><?php echo esc_html($service['description']); ?></p>
-              <a href="<?php echo esc_url($service['button_link']); ?>" 
-                 class="btn btn-success" 
-                 target="_blank">
-                <?php echo esc_html($service['button_text']); ?>
-              </a>
+    <div class="container">
+        <div class="row py-5 text-white">
+            <div class="about-section col-lg-6 col-md-12">
+                <div class="p-3">
+                    <h2 class="section-title mb-3 fw-bold">Our Recent Projects</h2>
+                    <p class="lead">
+                        Explore some of our recent projects where creativity meets performance.
+                        Each one reflects our dedication to design and development excellence.
+                    </p>
+                </div>
+                <div class="p-3">
+                    <h2 class="section-title mb-3 fw-bold">Building the Future, One Project at a Time</h2>
+                    <p class="lead">
+                        At <strong>Leela Infotech</strong>, innovation never stops. Our team is currently developing a
+                        range of new digital experiences — from modern e-commerce platforms like <strong>Leela
+                            Retail</strong> and <strong>Leela Wear</strong>, to powerful service solutions such as
+                        <strong>Leela Transport</strong> and <strong>Leela Test</strong>. We’re also crafting new
+                        ventures like a <strong>Gym Website</strong> and a <strong>Clinic Website</strong> that redefine
+                        how users connect, engage, and grow online.
+                        <br><br>
+                        Stay tuned as we continue expanding our digital ecosystem and delivering next-generation
+                        products designed to make businesses smarter, faster, and more connected.
+                    </p>
+                </div>
             </div>
-          </swiper-slide>
-        <?php endforeach; ?>
-    </swiper-container>
-  </div>
-</div>
-</div>
-</section>
+<main class="d-flex flex-column">
+            <div class="services-swiper col-lg-6 col-md-12">
+                <swiper-container class="mySwiper" space-between="30" centered-slides="true" slides-per-view="1"
+                    autoplay-delay="2500" autoplay-disable-on-interaction="false" autoplay-pause-on-mouse-enter="true">
 
+                    <?php foreach ($services as $service): ?>
+                        <swiper-slide>
+                            <div class="service-card h-100 w-100 bg-white" data-tilt>
+                                <div class="text-center mb-3 d-flex justify-content-center">
+                                    <img src="<?php echo esc_url($service['icon']); ?>"
+                                        alt="<?php echo esc_attr($service['title']); ?> Icon" class="services-logo"
+                                        style="width:80px; height:80px; object-fit:cover;">
+                                </div>
+                                <h2><?php echo esc_html($service['title']); ?></h2>
+                                <p><?php echo esc_html($service['description']); ?></p>
+                                <a href="<?php echo esc_url($service['button_link']); ?>" class="btn btn-success"
+                                    target="_blank">
+                                    <?php echo esc_html($service['button_text']); ?>
+                                </a>
+                            </div>
+                        </swiper-slide>
+                    <?php endforeach; ?>
+                </swiper-container>
+            </div>
+
+            <div class="upcoming-services-swiper col-lg-6 col-md-12">
+                <swiper-container class="mySwiper" space-between="30" centered-slides="true" slides-per-view="1"
+                    autoplay-delay="2500" autoplay-disable-on-interaction="false" autoplay-pause-on-mouse-enter="true">
+
+                    <?php foreach ($upcoming_services as $upcoming_service): ?>
+                        <swiper-slide>
+                            <div class="service-card h-100 w-100 bg-white" data-tilt>
+                                <div class="text-center mb-3 d-flex justify-content-center">
+                                    <img src="<?php echo esc_url($upcoming_service['icon']); ?>"
+                                        alt="<?php echo esc_attr($upcoming_service['title']); ?> Icon" class="services-logo"
+                                        style="width:80px; height:80px; object-fit:cover;">
+                                </div>
+                                <h2><?php echo esc_html($upcoming_service['title']); ?></h2>
+                                <p><?php echo esc_html($upcoming_service['description']); ?></p>
+                                <a href="<?php echo esc_url($upcoming_service['button_link']); ?>" class="btn btn-success"
+                                    target="_blank">
+                                    <?php echo esc_html($upcoming_service['button_text']); ?>
+                                </a>
+                            </div>
+                        </swiper-slide>
+                    <?php endforeach; ?>
+                </swiper-container>
+            </div>
+</main>
+        </div>
+    </div>
+</section>
