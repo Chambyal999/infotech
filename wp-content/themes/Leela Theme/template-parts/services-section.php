@@ -46,7 +46,7 @@ if (is_front_page()) {
 
   <?php
   // Array of services
-  $complete_projects=[
+  $complete_projects = [
     [
       'icon' => '/wp-content/uploads/2025/09/programming.png',
       'title' => 'Leela Infotech',
@@ -115,12 +115,25 @@ if (is_front_page()) {
       'button_link' => 'https://tests.leelaholdings.in'
     ]
   ];
+
+  $heading = 'Our Projects';
+  $paragraph = 'Explore the journey of Leela Holdings — from completed work to upcoming innovations.';
   ?>
-<section class="projects-container d-flex justify-content-evenly align-items-center gap-3">
-<div class="w-100"><a class="btn btn-primary w-100 rounded-0" href="#">Complete Projects</a></div>
-<div class="w-100"><a class="btn btn-primary w-100 rounded-0" href="#">Recent Projects</a></div>
-<div class="w-100"><a class="btn btn-primary w-100 rounded-0" href="#">Upcoming Projects</a></div>
-</div>
+  <section class="projects-container d-flex justify-content-evenly align-items-center gap-3">
+    <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="complete">Complete Projects</button>
+    <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="recent">Recent Projects</button>
+    <button class="btn btn-primary w-100 rounded-0 project-btn" data-type="upcoming">Upcoming Projects</button>
+  </section>
+  <script>
+  const allProjects = {
+    complete: <?php echo json_encode($complete_projects); ?>,
+    recent: <?php echo json_encode($recent_projects); ?>,
+    upcoming: <?php echo json_encode($Upcoming_projects); ?>,
+  };
+</script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
+
+
 
 
   <main class="bg-white py-5" id="leela-brands">
