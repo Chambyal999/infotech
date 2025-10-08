@@ -17,7 +17,9 @@ get_header();
     }
     ?>
     <!-- next previous button start  -->
+<?php if(is_page( array( '132, 133, 134'))){ ?>
 <section class="pb-lg-5 pb-4">
+    
 <?php
 $current_url = home_url( add_query_arg( NULL, NULL ) );
 
@@ -43,6 +45,11 @@ elseif ($current_url == $dm) {
 echo '</div>'; ?>
 </section>
 <!-- next previous button end  -->
+<?php } else if(is_page(41)){
+    get_template_part('/template-parts/our-recent-projects');
+ } else {?>
+
+ <?php } ?>
     </div>
     </div>
 
