@@ -7,7 +7,7 @@
 
 $services = [
     [
-        'icon' => '/wp-content/uploads/2025/10/cropped-site-log-main-1.png',
+        'icon' => '/wp-content/uploads/2025/09/cropped-site-log-main-1.png',
         'title' => 'Leela Holdings',
         'description' => 'Corporate website for the parent company — elegant, professional, and strategic.',
     ],
