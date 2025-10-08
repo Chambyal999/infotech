@@ -46,7 +46,7 @@ echo '</div>'; ?>
 </section>
 <!-- next previous button end  -->
 <?php } else if(is_page(41)){
-    get_template_part('/template-parts/our-recent-projects');
+    get_template_part('/template-parts/services-section');
  } else {?>
 
  <?php } ?>
