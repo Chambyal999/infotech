@@ -127,8 +127,7 @@ $upcoming_services = [
                     </p>
                 </div>
                 <div class="d-flex">
-                    <a class="w-100" target="_blank" href="/projects/">View More
-                        Projects</a>
+                    <a class="w-100 btn btn-success" target="_blank" href="/projects/">View More Projects</a>
                 </div>
             </main>
         </div>
