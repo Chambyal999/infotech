@@ -56,9 +56,9 @@ $upcoming_services = [
 ];
 
 ?>
-<section class="services m-5">
+<section class="services m-lg-5 mt-5">
     <div class="container">
-        <div class="row p-5">
+        <div class="row p-lg-5">
             <main class="d-flex flex-column col-lg-6 col-md-12 gap-3">
                 <div class="services-swiper">
                     <swiper-container class="mySwiper" space-between="30" centered-slides="true" slides-per-view="1"

@@ -9,7 +9,7 @@ if (is_page(41)) {
 $complete_projects = [
     [
         'icons' => [
-            '/wp-content/uploads/2025/10/programming.png',
+            '/wp-content/uploads/2025/10/leela-infotech.png',
             '/wp-content/uploads/2025/10/programming.png'
         ],
         'title' => 'Leela Infotech',
@@ -19,7 +19,7 @@ $complete_projects = [
     ],
     [
        'icons' => [
-            '/wp-content/uploads/2025/10/programming.png',
+            '/wp-content/uploads/2025/10/leela-holdings.png',
             '/wp-content/uploads/2025/10/programming.png'
         ],
         'title' => 'Leela Holdings',
@@ -32,7 +32,7 @@ $complete_projects = [
 $recent_projects = [
     [
         'icons' => [
-          '/wp-content/uploads/2025/10/retail.png',
+          '/wp-content/uploads/2025/10/leela-retail.png',
           '/wp-content/uploads/2025/10/retail.png',
         ],
         'title' => 'Leela Retail',
@@ -42,7 +42,7 @@ $recent_projects = [
     ],
     [
         'icons' => [
-          '/wp-content/uploads/2025/10/tshirt.png',
+          '/wp-content/uploads/2025/10/leela-wear.jpg',
           '/wp-content/uploads/2025/10/tshirt.png',
         ],
         'title' => 'Leela Wear',
@@ -52,7 +52,7 @@ $recent_projects = [
     ],
      [
         'icons' => [
-          '/wp-content/uploads/2025/10/tshirt.png',
+          '/wp-content/uploads/2025/10/leela-transport.png',
           '/wp-content/uploads/2025/10/tshirt.png',
         ],
         'title' => 'Leela Transport',
@@ -62,7 +62,7 @@ $recent_projects = [
     ],
      [
         'icons' => [
-          '/wp-content/uploads/2025/10/tshirt.png',
+          '/wp-content/uploads/2025/10/leela-test.png',
           '/wp-content/uploads/2025/10/tshirt.png',
         ],
         'title' => 'Leela Test',
@@ -75,7 +75,7 @@ $recent_projects = [
 $upcoming_projects = [
     [
         'icons' => [
-          '/wp-content/uploads/2025/10/education.png',
+          '/wp-content/uploads/2025/10/leela-portfolio.jpg',
           '/wp-content/uploads/2025/10/education.png',
         ],
         'title' => 'Founder Portfolio',
@@ -85,7 +85,7 @@ $upcoming_projects = [
     ],
     [
         'icons' => [
-          '/wp-content/uploads/2025/10/education.png',
+          '/wp-content/uploads/2025/10/gym.jpeg',
           '/wp-content/uploads/2025/10/education.png',
         ],
         'title' => 'Gym Website',
@@ -95,7 +95,7 @@ $upcoming_projects = [
     ],
      [
         'icons' => [
-          '/wp-content/uploads/2025/10/education.png',
+          '/wp-content/uploads/2025/10/leela-clinic.png',
           '/wp-content/uploads/2025/10/education.png',
         ],
         'title' => 'Clinic Website',

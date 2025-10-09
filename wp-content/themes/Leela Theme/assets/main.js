@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="col-lg-4 col-md-6 d-flex justify-content-center">
           <div class="service-card h-100 w-100" data-tilt>
             <div class="text-center mb-3">
-              <img src="${siteUrl}${p.icon}" alt="${p.title}" class="services-logo" style="width:80px;height:80px;object-fit:cover;">
+              <img src="${siteUrl}${p.icon}" alt="${p.title}" class="services-logo" style="width:100%; height:200px; object-fit:cover;">
             </div>
             <h2>${p.title}</h2>
             <p>${p.description}</p>
