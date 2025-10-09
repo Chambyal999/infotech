@@ -176,18 +176,19 @@ footer {
 
 // hover effect for services section images 
 .service-card {
-  position: relative;
-  overflow: hidden;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0);
-    transition: 0.3s;
+  img {
+    transition: opacity 0.4s ease-in-out;
   }
 
-  &:hover::after {
-    background: rgba(0, 0, 0, 0.4);
+  &:hover {
+    img:first-child {
+      opacity: 0;
+    }
+
+    img:last-child {
+      opacity: 1;
+    }
   }
 }
+
+
