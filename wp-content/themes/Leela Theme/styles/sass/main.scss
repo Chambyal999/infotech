@@ -172,3 +172,16 @@ footer {
 }
 
 // side bar css style end
+
+
+// hover effect for services section images 
+.service-card img {
+  transition: opacity 0.4s ease-in-out;
+}
+.service-card:hover img:first-child {
+  opacity: 0;
+}
+.service-card:hover img:last-child {
+  opacity: 1;
+}
+
