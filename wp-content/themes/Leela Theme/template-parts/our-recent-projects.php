@@ -59,7 +59,7 @@ $upcoming_services = [
 <section class="services m-lg-5 mt-5">
     <div class="container">
         <div class="row p-lg-5">
-            <main class="d-flex flex-column col-lg-6 col-md-12 gap-3">
+            <main class="d-flex flex-column col-lg-6 col-md-12 gap-3 order-2 order-lg-1">
                 <div class="services-swiper">
                     <swiper-container class="mySwiper" space-between="30" centered-slides="true" slides-per-view="1"
                         autoplay-delay="2500" autoplay-disable-on-interaction="false"
@@ -104,7 +104,7 @@ $upcoming_services = [
                     </swiper-container>
                 </div>
             </main>
-            <main class="about-section col-lg-6 col-md-12">
+            <main class="about-section col-lg-6 col-md-12 order-1 order-lg-2">
                 <div class="p-3">
                     <h2 class="section-title mb-3 fw-bold">Our Recent Projects</h2>
                     <p class="lead">
@@ -127,7 +127,7 @@ $upcoming_services = [
                     </p>
                 </div>
                 <div class="d-flex">
-                    <a class="w-100 btn btn-success" target="_blank" href="/projects/">View More Projects</a>
+                    <a class="w-100 btn btn-success d-lg-block d-none" target="_blank" href="/projects/">View More Projects</a>
                 </div>
             </main>
         </div>

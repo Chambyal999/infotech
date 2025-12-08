@@ -23,7 +23,7 @@ $footer_images = [
         <footer class="text-white text-start footer-container" style="background-color: #231f20;">
             <main class="d-flex flex-column">
                 <div class="container py-5">
-                    <div class="row pt-4 text-center">
+                    <div class="row pt-4 text-start">
                         <div class="col-lg-4 col-md-6">
                             <h5>Leela Infotech, Inc.</h5>
                             <p class="text-12">Designed by <a class="text-warning fw-semibold text-decoration-none link-light" href="https://portfolio.leelaholdings.in/">Atul Chambyal.</a></p>
@@ -31,8 +31,8 @@ $footer_images = [
                         <div class="col-lg-8 col-md-6">
                     <section class="row">
                         <div class="col-lg-6 col-md-6 col-12 mb-4 footer-menu ">
-                             <p class="menu-item mb-0"><a href="mailto:leelasonscorporation@gmail.com">leelasonscorporation@gmail.com</a></p>
-                            <p class="menu-item"><a href="tel:7807982499">+91 78079-82499</a></p>
+                             <p class="menu-item mb-0"><a href="mailto:infotech@leelaholdings.in">infotech@leelaholdings.in</a></p>
+                            <p class="menu-item">Call us: <?php echo do_shortcode('[site_phone_number]'); ?></p>
                         </div>
  
                         

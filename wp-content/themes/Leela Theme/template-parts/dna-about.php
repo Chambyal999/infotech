@@ -6,7 +6,7 @@
  */
 ?>
 
-<section class="services-container p-lg-5 p-2">
+<section class="services-container p-lg-5 p-3">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-4 col-md-0 d-none d-lg-block">
