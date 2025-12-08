@@ -13,7 +13,7 @@ add_action( 'after_setup_theme', 'leela_theme_setup' );
 
 // Shortcode for clickable phone number
 add_shortcode('site_phone_number', function () {
-    return '<a href="tel:+917807982499">+91-78079-82499</a>';
+    return '<a href="tel:+917018950221">+91-70189-50221</a>';
 });
 
 // Shortcode for clickable site URL
