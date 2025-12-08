@@ -24,7 +24,7 @@ $footer_images = [
             <main class="d-flex flex-column">
                 <div class="container py-5">
                     <div class="row pt-4 text-start">
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" >
                             <h5>Leela Infotech, Inc.</h5>
                             <p class="text-12">Designed by <a class="text-warning fw-semibold text-decoration-none link-light" href="https://portfolio.leelaholdings.in/">Atul Chambyal.</a></p>
                         </div>
